@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/WorkGiverDef[defName="DoBillsSculpt"]/fixedBillGiverDefs</xpath>
+    <value>
+      <li>LaserTableSculpting</li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="SculptureSmall"]/stuffCategories</xpath>
+    <value>
+      <li>Gemstones</li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="SculptureLarge"]/stuffCategories</xpath>
+    <value>
+      <li>Gemstones</li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="SculptureGrand"]/stuffCategories</xpath>
+    <value>
+      <li>Gemstones</li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[@Name="SculptureBase"]/recipeMaker/recipeUsers</xpath>
+    <value>
+      <li>LaserTableSculpting</li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Jade"]/stuffProps/categories</xpath>
+    <value>
+      <li>Gemstones</li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/GenStepDef[defName="PreciousLump"]/genStep/mineables</xpath>
+    <value>
+      <li>MineableDiamond</li>
+      <li>MineableRuby</li>
+      <li>MineableSapphire</li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/BodyDef[defName="Human"]/corePart/parts/li[def="Neck"]/parts/li[def="Head"]/parts/li[def="Ear"]/groups</xpath>
+    <value>
+      <li>Ears</li>
+    </value>
+  </Operation>
+</Patch>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <MineableDiamond.label>алмаз</MineableDiamond.label>
+  <MineableDiamond.description>Каменистая порода с вкраплениями алмазов.</MineableDiamond.description>
+
+  <MineableRuby.label>рубин</MineableRuby.label>
+  <MineableRuby.description>Каменистая порода с вкраплениями рубинов.</MineableRuby.description>
+
+  <MineableSapphire.label>сапфир</MineableSapphire.label>
+  <MineableSapphire.description>Каменистая порода с вкраплениями сапфиров.</MineableSapphire.description>
+</LanguageData>

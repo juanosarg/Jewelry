@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <TerrainDef Abstract="True" ParentName="FloorBase" Name="GemsMetalBase">
+    <texturePath>Terrain/Surfaces/GenericFloorTile</texturePath>
+    <designatorDropdown>Floor_Gems_Fine</designatorDropdown>
+    <constructEffect>ConstructMetal</constructEffect>
+    <researchPrerequisites>
+      <li>Smithing</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>3</constructionSkillPrerequisite>
+    <tags>
+      <li>FineFloor</li>
+    </tags>
+    <designationHotKey>Misc3</designationHotKey>
+  </TerrainDef>
+
+  <TerrainDef ParentName="GemsMetalBase">
+    <defName>DiamondTile</defName>
+    <label>diamond tile</label>
+    <renderPrecedence>242</renderPrecedence>
+    <description>For overbearing extravagance. They are exceptionally expensive, and exceptionally beautiful, and people will think you're exceptionally snobbish if you actually live on them.</description>
+    <color>(0.3,0.69,0.74)</color>
+    <statBases>
+      <Beauty>6</Beauty>
+      <WorkToBuild>800</WorkToBuild>
+      <Cleanliness>0.2</Cleanliness>
+    </statBases>
+    <costList>
+      <Diamond>10</Diamond>
+    </costList>
+  </TerrainDef>
+
+  <TerrainDef ParentName="GemsMetalBase">
+    <defName>RubyTile</defName>
+    <label>ruby tile</label>
+    <renderPrecedence>242</renderPrecedence>
+    <description>For overbearing extravagance. They are exceptionally expensive, and exceptionally beautiful, and people will think you're exceptionally snobbish if you actually live on them.</description>
+    <color>(0.49,0.15,0.14)</color>
+    <statBases>
+      <Beauty>5</Beauty>
+      <WorkToBuild>800</WorkToBuild>
+      <Cleanliness>0.2</Cleanliness>
+    </statBases>
+    <costList>
+      <Ruby>10</Ruby>
+    </costList>
+  </TerrainDef>
+
+  <TerrainDef ParentName="GemsMetalBase">
+    <defName>SapphireTile</defName>
+    <label>sapphire tile</label>
+    <renderPrecedence>242</renderPrecedence>
+    <description>For overbearing extravagance. They are exceptionally expensive, and exceptionally beautiful, and people will think you're exceptionally snobbish if you actually live on them.</description>
+    <color>(0.27,0.27,0.53)</color>
+    <statBases>
+      <Beauty>5</Beauty>
+      <WorkToBuild>800</WorkToBuild>
+      <Cleanliness>0.2</Cleanliness>
+    </statBases>
+    <costList>
+      <Sapphire>10</Sapphire>
+    </costList>
+  </TerrainDef>
+</Defs>

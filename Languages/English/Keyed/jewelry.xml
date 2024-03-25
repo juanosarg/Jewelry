@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+    <JewelrySettingsCategoryLabel>Jewelry</JewelrySettingsCategoryLabel>
+
+    <shouldJewelryBoostMood>Wearing jewelry give mood boost On/Off</shouldJewelryBoostMood>
+    <explanationRToggle>Re-enabling jewelry requirement for royals requires a game restart.</explanationRToggle>
+    <shouldJewelryNeed>Royal pawn need jewelry On/Off</shouldJewelryNeed>
+</LanguageData>

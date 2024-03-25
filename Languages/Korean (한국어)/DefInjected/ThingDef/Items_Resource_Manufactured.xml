@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Diamond.label>다이아몬드</Diamond.label>
+  <Diamond.description>귀중한 보석입니다. 주로 장신구를 만들거나 가구를 꾸미는데 쓰입니다.</Diamond.description>
+  <Diamond.stuffProps.stuffAdjective>다이아몬드</Diamond.stuffProps.stuffAdjective>
+
+  <Ruby.label>루비</Ruby.label>
+  <Ruby.description>귀중한 보석입니다. 주로 장신구를 만들거나 가구를 꾸미는데 쓰입니다.</Ruby.description>
+  <Ruby.stuffProps.stuffAdjective>루비</Ruby.stuffProps.stuffAdjective>
+
+  <Sapphire.label>사파이어</Sapphire.label>
+  <Sapphire.description>귀중한 보석입니다. 주로 장신구를 만들거나 가구를 꾸미는데 쓰입니다.</Sapphire.description>
+  <Sapphire.stuffProps.stuffAdjective>사파이어</Sapphire.stuffProps.stuffAdjective>
+
+
+</LanguageData>

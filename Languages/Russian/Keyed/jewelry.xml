@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <JewelrySettingsCategoryLabel>Jewelry</JewelrySettingsCategoryLabel>
+
+  <shouldJewelryBoostMood>Ношение ювелирных изделий даёт бонус к настроению</shouldJewelryBoostMood>
+  <explanationRToggle>Для повторного включения пункта «Знать хочет носить ювелирные изделия» требуется перезапуск игры.</explanationRToggle>
+  <shouldJewelryNeed>Знать хочет носить ювелирные изделия</shouldJewelryNeed>
+</LanguageData>

@@ -1,0 +1,716 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Royalty</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <!-- Add eltex jewelry -->
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <ThingDef ParentName="K_Necklace">
+              <defName>Jewelry_PsychicNecklace_Silver</defName>
+              <label>silver eltex necklace</label>
+              <description>A beautiful necklace made from silver and a priceless gem. It improves the wearer's social skill and beauty. This particular necklace is for psychic focusing. While it provides little physical protection, its special materials enhance the wearer's psychic sensitivity and dissipate psychic entropy.</description>
+              <graphicData>
+                <texPath>SilverJewelery/JewelleryNecklace</texPath>
+                <graphicClass>Graphic_Single</graphicClass>
+                <shaderType>CutoutComplex</shaderType>
+              </graphicData>
+              <statBases>
+                <Mass>0.14</Mass>
+                <EquipDelay>0.3</EquipDelay>
+                <MarketValue>450</MarketValue>
+                <Beauty>10</Beauty>
+                <WorkToMake>4000</WorkToMake>
+              </statBases>
+              <equippedStatOffsets>
+                <PsychicEntropyRecoveryRate>0.05</PsychicEntropyRecoveryRate>
+                <PsychicSensitivity>0.10</PsychicSensitivity>
+                <PawnBeauty>+1</PawnBeauty>
+                <SocialImpact>0.1</SocialImpact>
+              </equippedStatOffsets>
+              <techLevel>Ultra</techLevel>
+              <tradeTags Inherit="False">
+                <li>PsychicApparel</li>
+              </tradeTags>
+              <thingSetMakerTags>
+                <li>RewardStandardLowFreq</li>
+              </thingSetMakerTags>
+              <apparel>
+                <tags>
+                  <li>Psychic</li>
+                </tags>
+              </apparel>
+              <costStuffCount>15</costStuffCount>
+              <stuffCategories>
+                <li>Gemstones</li>
+              </stuffCategories>
+              <costList>
+                <Silver>3</Silver>
+              </costList>
+            </ThingDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <ThingDef ParentName="K_Necklace">
+              <defName>Jewelry_PsychicNecklace</defName>
+              <label>gold eltex necklace</label>
+              <description>A beautiful necklace made from gold and a priceless gem. It improves the wearer's social skill and beauty. This particular necklace is for psychic focusing. While it provides little physical protection, its special materials enhance the wearer's psychic sensitivity and dissipate psychic entropy.</description>
+              <graphicData>
+                <texPath>Items/Apparel/Necklace/JewelleryNecklace</texPath>
+                <graphicClass>Graphic_Single</graphicClass>
+                <shaderType>CutoutComplex</shaderType>
+              </graphicData>
+              <statBases>
+                <Mass>0.14</Mass>
+                <EquipDelay>0.3</EquipDelay>
+                <MarketValue>450</MarketValue>
+                <Beauty>10</Beauty>
+                <WorkToMake>4000</WorkToMake>
+              </statBases>
+              <equippedStatOffsets>
+                <PsychicEntropyRecoveryRate>0.05</PsychicEntropyRecoveryRate>
+                <PsychicSensitivity>0.10</PsychicSensitivity>
+                <PawnBeauty>+1</PawnBeauty>
+                <SocialImpact>0.1</SocialImpact>
+              </equippedStatOffsets>
+              <techLevel>Ultra</techLevel>
+              <tradeTags Inherit="False">
+                <li>PsychicApparel</li>
+              </tradeTags>
+              <thingSetMakerTags>
+                <li>RewardStandardLowFreq</li>
+              </thingSetMakerTags>
+              <apparel>
+                <tags>
+                  <li>Psychic</li>
+                </tags>
+              </apparel>
+              <costStuffCount>15</costStuffCount>
+              <stuffCategories>
+                <li>Gemstones</li>
+              </stuffCategories>
+              <costList>
+                <Gold>3</Gold>
+              </costList>
+            </ThingDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <ThingDef ParentName="K_Ring">
+              <defName>Jewelry_EltexRing</defName>
+              <label>gold eltex ring</label>
+              <description>A beautiful ring made from gold and a priceless gem. It improves the wearer's social impact. This particular ring is for psychic focusing. Its special materials enhance the wearer's psychic sensitivity and dissipate psychic entropy.</description>
+              <graphicData>
+                <texPath>Items/Apparel/Ring/JewelleryRing</texPath>
+                <graphicClass>Graphic_Single</graphicClass>
+                <shaderType>CutoutComplex</shaderType>
+              </graphicData>
+              <statBases>
+                <Mass>0.06</Mass>
+                <EquipDelay>0.2</EquipDelay>
+                <Beauty>15</Beauty>
+                <MarketValue>150</MarketValue>
+                <WorkToMake>2500</WorkToMake>
+              </statBases>
+              <equippedStatOffsets>
+                <PsychicEntropyRecoveryRate>0.015</PsychicEntropyRecoveryRate>
+                <PsychicSensitivity>0.05</PsychicSensitivity>
+                <SocialImpact>0.05</SocialImpact>
+              </equippedStatOffsets>
+              <costStuffCount>5</costStuffCount>
+              <stuffCategories>
+                <li>Gemstones</li>
+              </stuffCategories>
+              <costList>
+                <Gold>1</Gold>
+              </costList>
+              <techLevel>Ultra</techLevel>
+              <tradeTags Inherit="False">
+                <li>PsychicApparel</li>
+              </tradeTags>
+              <thingSetMakerTags>
+                <li>RewardStandardLowFreq</li>
+              </thingSetMakerTags>
+              <apparel>
+                <tags>
+                  <li>Psychic</li>
+                </tags>
+              </apparel>
+            </ThingDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <ThingDef ParentName="K_Ring">
+              <defName>Jewelry_EltexRing_Silver</defName>
+              <label>silver eltex ring</label>
+              <description>A beautiful ring made from silver and a priceless gem. It improves the wearer's social impact. This particular ring is for psychic focusing. Its special materials enhance the wearer's psychic sensitivity and dissipate psychic entropy.</description>
+              <graphicData>
+                <texPath>SilverJewelery/JewelleryRing</texPath>
+                <graphicClass>Graphic_Single</graphicClass>
+                <shaderType>CutoutComplex</shaderType>
+              </graphicData>
+              <statBases>
+                <Mass>0.06</Mass>
+                <EquipDelay>0.2</EquipDelay>
+                <Beauty>15</Beauty>
+                <MarketValue>150</MarketValue>
+                <WorkToMake>2500</WorkToMake>
+              </statBases>
+              <equippedStatOffsets>
+                <PsychicEntropyRecoveryRate>0.015</PsychicEntropyRecoveryRate>
+                <PsychicSensitivity>0.05</PsychicSensitivity>
+                <SocialImpact>0.05</SocialImpact>
+              </equippedStatOffsets>
+              <costStuffCount>5</costStuffCount>
+              <stuffCategories>
+                <li>Gemstones</li>
+              </stuffCategories>
+              <costList>
+                <Silver>1</Silver>
+              </costList>
+              <techLevel>Ultra</techLevel>
+              <tradeTags Inherit="False">
+                <li>PsychicApparel</li>
+              </tradeTags>
+              <thingSetMakerTags>
+                <li>RewardStandardLowFreq</li>
+              </thingSetMakerTags>
+              <apparel>
+                <tags>
+                  <li>Psychic</li>
+                </tags>
+              </apparel>
+            </ThingDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <ThingDef ParentName="K_Earrings">
+              <defName>Jewelry_EltexEarring</defName>
+              <label>gold eltex earring</label>
+              <description>A beautiful pair of earrings made from gold and a priceless gem. It improves the wearer's social skill, trade skill and beauty. Its special materials enhance the wearer's psychic sensitivity and dissipate psychic entropy.</description>
+              <graphicData>
+                <texPath>Items/Apparel/Earrings/JewelleryEarrings</texPath>
+                <graphicClass>Graphic_Single</graphicClass>
+                <shaderType>CutoutComplex</shaderType>
+              </graphicData>
+              <statBases>
+                <Mass>0.06</Mass>
+                <EquipDelay>0.2</EquipDelay>
+                <Beauty>10</Beauty>
+                <MarketValue>160</MarketValue>
+                <WorkToMake>4000</WorkToMake>
+              </statBases>
+              <equippedStatOffsets>
+                <PsychicEntropyRecoveryRate>0.015</PsychicEntropyRecoveryRate>
+                <PsychicSensitivity>0.05</PsychicSensitivity>
+                <TradePriceImprovement>0.05</TradePriceImprovement>
+                <PawnBeauty>+1</PawnBeauty>
+                <SocialImpact>0.05</SocialImpact>
+              </equippedStatOffsets>
+              <costStuffCount>5</costStuffCount>
+              <stuffCategories>
+                <li>Gemstones</li>
+              </stuffCategories>
+              <costList>
+                <Gold>1</Gold>
+              </costList>
+              <tradeTags Inherit="False">
+                <li>PsychicApparel</li>
+              </tradeTags>
+              <thingSetMakerTags>
+                <li>RewardStandardLowFreq</li>
+              </thingSetMakerTags>
+              <apparel>
+                <tags>
+                  <li>Psychic</li>
+                </tags>
+              </apparel>
+            </ThingDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <ThingDef ParentName="K_Earrings">
+              <defName>Jewelry_EltexEarring_Silver</defName>
+              <label>silver eltex earring</label>
+              <description>A beautiful pair of earrings made from silver and a priceless gem. It improves the wearer's social skill, trade skill and beauty. Its special materials enhance the wearer's psychic sensitivity and dissipate psychic entropy.</description>
+              <graphicData>
+                <texPath>SilverJewelery/JewelleryEarrings</texPath>
+                <graphicClass>Graphic_Single</graphicClass>
+                <shaderType>CutoutComplex</shaderType>
+              </graphicData>
+              <statBases>
+                <Mass>0.06</Mass>
+                <EquipDelay>0.2</EquipDelay>
+                <Beauty>10</Beauty>
+                <MarketValue>160</MarketValue>
+                <WorkToMake>4000</WorkToMake>
+              </statBases>
+              <equippedStatOffsets>
+                <PsychicEntropyRecoveryRate>0.015</PsychicEntropyRecoveryRate>
+                <PsychicSensitivity>0.05</PsychicSensitivity>
+                <TradePriceImprovement>0.05</TradePriceImprovement>
+                <PawnBeauty>+1</PawnBeauty>
+                <SocialImpact>0.05</SocialImpact>
+              </equippedStatOffsets>
+              <costStuffCount>5</costStuffCount>
+              <stuffCategories>
+                <li>Gemstones</li>
+              </stuffCategories>
+              <costList>
+                <Silver>1</Silver>
+              </costList>
+              <tradeTags Inherit="False">
+                <li>PsychicApparel</li>
+              </tradeTags>
+              <thingSetMakerTags>
+                <li>RewardStandardLowFreq</li>
+              </thingSetMakerTags>
+              <apparel>
+                <tags>
+                  <li>Psychic</li>
+                </tags>
+              </apparel>
+            </ThingDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <ThingDef ParentName="K_Bracelet">
+              <defName>Jewelry_EltexBracelet</defName>
+              <label>gold eltex bracelet</label>
+              <description>A beautiful bracelet made from gold and a priceless gem. It improves the wearer's social skill and beauty. Its special materials enhance the wearer's psychic sensitivity and dissipate psychic entropy.</description>
+              <graphicData>
+                <texPath>Items/Apparel/Bracelet/JewelleryBracelet</texPath>
+                <graphicClass>Graphic_Single</graphicClass>
+                <shaderType>CutoutComplex</shaderType>
+              </graphicData>
+              <statBases>
+                <Mass>0.06</Mass>
+                <EquipDelay>0.2</EquipDelay>
+                <Beauty>15</Beauty>
+                <MarketValue>250</MarketValue>
+                <WorkToMake>4000</WorkToMake>
+              </statBases>
+              <equippedStatOffsets>
+                <PsychicEntropyRecoveryRate>0.015</PsychicEntropyRecoveryRate>
+                <PsychicSensitivity>0.05</PsychicSensitivity>
+                <PawnBeauty>+1</PawnBeauty>
+                <SocialImpact>0.05</SocialImpact>
+              </equippedStatOffsets>
+              <costStuffCount>10</costStuffCount>
+              <stuffCategories>
+                <li>Gemstones</li>
+              </stuffCategories>
+              <costList>
+                <Gold>2</Gold>
+              </costList>
+              <tradeTags Inherit="False">
+                <li>PsychicApparel</li>
+              </tradeTags>
+              <thingSetMakerTags>
+                <li>RewardStandardLowFreq</li>
+              </thingSetMakerTags>
+              <apparel>
+                <tags>
+                  <li>Psychic</li>
+                </tags>
+              </apparel>
+            </ThingDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <ThingDef ParentName="K_Bracelet">
+              <defName>Jewelry_EltexBracelet_Silver</defName>
+              <label>silver eltex bracelet</label>
+              <description>A beautiful bracelet made from silver and a priceless gem. It improves the wearer's social skill and beauty. Its special materials enhance the wearer's psychic sensitivity and dissipate psychic entropy.</description>
+              <graphicData>
+                <texPath>SilverJewelery/JewelleryBracelet</texPath>
+                <graphicClass>Graphic_Single</graphicClass>
+                <shaderType>CutoutComplex</shaderType>
+              </graphicData>
+              <statBases>
+                <Mass>0.06</Mass>
+                <EquipDelay>0.2</EquipDelay>
+                <Beauty>15</Beauty>
+                <MarketValue>250</MarketValue>
+                <WorkToMake>4000</WorkToMake>
+              </statBases>
+              <equippedStatOffsets>
+                <PsychicEntropyRecoveryRate>0.015</PsychicEntropyRecoveryRate>
+                <PsychicSensitivity>0.05</PsychicSensitivity>
+                <PawnBeauty>+1</PawnBeauty>
+                <SocialImpact>0.05</SocialImpact>
+              </equippedStatOffsets>
+              <costStuffCount>10</costStuffCount>
+              <stuffCategories>
+                <li>Gemstones</li>
+              </stuffCategories>
+              <costList>
+                <Silver>2</Silver>
+              </costList>
+              <tradeTags Inherit="False">
+                <li>PsychicApparel</li>
+              </tradeTags>
+              <thingSetMakerTags>
+                <li>RewardStandardLowFreq</li>
+              </thingSetMakerTags>
+              <apparel>
+                <tags>
+                  <li>Psychic</li>
+                </tags>
+              </apparel>
+            </ThingDef>
+          </value>
+        </li>
+        <li Class="PatchOperationFindMod">
+          <mods>
+            <li>Vanilla Psycasts Expanded</li>
+          </mods>
+          <match Class="PatchOperationSequence">
+            <operations>
+              <li Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="Jewelry_PsychicNecklace" or defName="Jewelry_PsychicNecklace_Silver" or defName="Jewelry_EltexRing" or defName="Jewelry_EltexEarring" or defName="Jewelry_EltexEarring_Silver" or defName="Jewelry_EltexBracelet" or defName="Jewelry_EltexBracelet_Silver"]/costList</xpath>
+                <value>
+                  <VPE_Eltex>1</VPE_Eltex>
+                </value>
+              </li>
+              <li Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="Jewelry_PsychicNecklace" or defName="Jewelry_PsychicNecklace_Silver"]</xpath>
+                <value>
+                  <recipeMaker>
+                    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+                    <effectWorking>CutStone</effectWorking>
+                    <soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+                    <recipeUsers>
+                      <li>LaserTableSculpting</li>
+                      <li>TableSculpting</li>
+                    </recipeUsers>
+                    <researchPrerequisite>Jewelry</researchPrerequisite>
+                    <workSkill>Artistic</workSkill>
+                    <skillRequirements>
+                      <Crafting>9</Crafting>
+                      <Artistic>5</Artistic>
+                    </skillRequirements>
+                    <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+                  </recipeMaker>
+                </value>
+              </li>
+              <li Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="Jewelry_EltexRing" or defName="Jewelry_EltexRing_Silver"]</xpath>
+                <value>
+                  <recipeMaker>
+                    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+                    <effectWorking>CutStone</effectWorking>
+                    <soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+                    <recipeUsers>
+                      <li>LaserTableSculpting</li>
+                      <li>TableSculpting</li>
+                    </recipeUsers>
+                    <researchPrerequisite>Jewelry</researchPrerequisite>
+                    <workSkill>Artistic</workSkill>
+                    <skillRequirements>
+                      <Crafting>5</Crafting>
+                      <Artistic>5</Artistic>
+                    </skillRequirements>
+                    <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+                  </recipeMaker>
+                </value>
+              </li>
+              <li Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="Jewelry_EltexEarring" or defName="Jewelry_EltexEarring_Silver"]</xpath>
+                <value>
+                  <recipeMaker>
+                    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+                    <effectWorking>CutStone</effectWorking>
+                    <soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+                    <recipeUsers>
+                      <li>LaserTableSculpting</li>
+                      <li>TableSculpting</li>
+                    </recipeUsers>
+                    <researchPrerequisite>Jewelry</researchPrerequisite>
+                    <workSkill>Artistic</workSkill>
+                    <skillRequirements>
+                      <Crafting>5</Crafting>
+                      <Artistic>5</Artistic>
+                    </skillRequirements>
+                    <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+                  </recipeMaker>
+                </value>
+              </li>
+              <li Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="Jewelry_EltexBracelet" or defName="Jewelry_EltexBracelet_Silver"]</xpath>
+                <value>
+                  <recipeMaker>
+                    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+                    <effectWorking>CutStone</effectWorking>
+                    <soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+                    <recipeUsers>
+                      <li>LaserTableSculpting</li>
+                      <li>TableSculpting</li>
+                    </recipeUsers>
+                    <researchPrerequisite>Jewelry</researchPrerequisite>
+                    <workSkill>Artistic</workSkill>
+                    <skillRequirements>
+                      <Crafting>5</Crafting>
+                      <Artistic>5</Artistic>
+                    </skillRequirements>
+                    <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+                  </recipeMaker>
+                </value>
+              </li>
+            </operations>
+          </match>
+        </li>
+        <!-- Add Gemstone to authorized stuff for empire faction -->
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/FactionDef[defName="Empire"]/apparelStuffFilter/stuffCategoriesToAllow</xpath>
+          <value>
+            <li>Gemstones</li>
+          </value>
+        </li>
+        <!-- Add jewelry to required apparel -->
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/RoyalTitleDef[defName="Esquire" or defName="Knight"]/requiredApparel</xpath>
+          <value>
+            <li>
+              <bodyPartGroupsMatchAny>
+                <li>LeftHand</li>
+              </bodyPartGroupsMatchAny>
+              <requiredTags>
+                <li>Jewelry</li>
+              </requiredTags>
+              <allowedTags>
+                <li>Jewelry</li>
+              </allowedTags>
+            </li>
+            <li>
+              <bodyPartGroupsMatchAny>
+                <li>Ears</li>
+              </bodyPartGroupsMatchAny>
+              <requiredTags>
+                <li>Jewelry</li>
+              </requiredTags>
+              <allowedTags>
+                <li>Jewelry</li>
+              </allowedTags>
+            </li>
+          </value>
+        </li>
+        <!-- Add jewelry to pawnkind -->
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/PawnKindDef[defName="Empire_Royal_Esquire" or defName="Empire_Royal_Knight"]</xpath>
+          <value>
+            <apparelRequired>
+              <li>Jewelry_Bracelet</li>
+              <li>Jewelry_Earring</li>
+            </apparelRequired>
+          </value>
+        </li>
+        <!-- Add jewelry to required apparel -->
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/RoyalTitleDef[defName="Praetor" or defName="Baron"]/requiredApparel</xpath>
+          <value>
+            <li>
+              <bodyPartGroupsMatchAny>
+                <li>RightHand</li>
+              </bodyPartGroupsMatchAny>
+              <requiredTags>
+                <li>Jewelry</li>
+              </requiredTags>
+              <allowedTags>
+                <li>Jewelry</li>
+              </allowedTags>
+            </li>
+            <li>
+              <bodyPartGroupsMatchAny>
+                <li>LeftHand</li>
+              </bodyPartGroupsMatchAny>
+              <requiredTags>
+                <li>Jewelry</li>
+              </requiredTags>
+              <allowedTags>
+                <li>Jewelry</li>
+              </allowedTags>
+            </li>
+            <li>
+              <bodyPartGroupsMatchAny>
+                <li>Ears</li>
+              </bodyPartGroupsMatchAny>
+              <requiredTags>
+                <li>Jewelry</li>
+              </requiredTags>
+              <allowedTags>
+                <li>Jewelry</li>
+              </allowedTags>
+            </li>
+          </value>
+        </li>
+        <!-- Add jewelry to pawnkind -->
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/PawnKindDef[defName="Empire_Royal_Praetor" or defName="Empire_Royal_Baron"]</xpath>
+          <value>
+            <apparelRequired>
+              <li>Jewelry_Bracelet</li>
+              <li>Jewelry_Ring</li>
+              <li>Jewelry_Earring</li>
+            </apparelRequired>
+          </value>
+        </li>
+        <!-- Add jewelry to required apparel -->
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/RoyalTitleDef[defName="Count"]/requiredApparel</xpath>
+          <value>
+            <li>
+              <bodyPartGroupsMatchAny>
+                <li>RightHand</li>
+              </bodyPartGroupsMatchAny>
+              <requiredTags>
+                <li>Jewelry</li>
+              </requiredTags>
+              <allowedTags>
+                <li>Jewelry</li>
+              </allowedTags>
+            </li>
+            <li>
+              <bodyPartGroupsMatchAny>
+                <li>LeftHand</li>
+              </bodyPartGroupsMatchAny>
+              <requiredTags>
+                <li>Jewelry</li>
+              </requiredTags>
+              <allowedTags>
+                <li>Jewelry</li>
+              </allowedTags>
+            </li>
+            <li>
+              <bodyPartGroupsMatchAny>
+                <li>Ears</li>
+              </bodyPartGroupsMatchAny>
+              <requiredTags>
+                <li>Jewelry</li>
+              </requiredTags>
+              <allowedTags>
+                <li>Jewelry</li>
+              </allowedTags>
+            </li>
+            <li>
+              <bodyPartGroupsMatchAny>
+                <li>Neck</li>
+              </bodyPartGroupsMatchAny>
+              <requiredTags>
+                <li>Jewelry</li>
+              </requiredTags>
+              <allowedTags>
+                <li>Jewelry</li>
+              </allowedTags>
+            </li>
+          </value>
+        </li>
+        <!-- Add jewelry to pawnkind -->
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/PawnKindDef[defName="Empire_Royal_Count" or defName="Empire_Royal_Duke" or defName="Empire_Royal_Consul" or defName="Empire_Royal_Stellarch"]</xpath>
+          <value>
+            <apparelRequired>
+              <li>Jewelry_Bracelet</li>
+              <li>Jewelry_Ring</li>
+              <li>Jewelry_Earring</li>
+              <li>Jewelry_Necklace</li>
+            </apparelRequired>
+          </value>
+        </li>
+        <!-- Add jewelry to required apparel npc -->
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/RoyalTitleDef[@Name="BaseEmpireTitleNPC"]/requiredApparel</xpath>
+          <value>
+            <li>
+              <bodyPartGroupsMatchAny>
+                <li>RightHand</li>
+              </bodyPartGroupsMatchAny>
+              <requiredTags>
+                <li>Jewelry</li>
+              </requiredTags>
+              <allowedTags>
+                <li>Jewelry</li>
+              </allowedTags>
+            </li>
+            <li>
+              <bodyPartGroupsMatchAny>
+                <li>LeftHand</li>
+              </bodyPartGroupsMatchAny>
+              <requiredTags>
+                <li>Jewelry</li>
+              </requiredTags>
+              <allowedTags>
+                <li>Jewelry</li>
+              </allowedTags>
+            </li>
+            <li>
+              <bodyPartGroupsMatchAny>
+                <li>Ears</li>
+              </bodyPartGroupsMatchAny>
+              <requiredTags>
+                <li>Jewelry</li>
+              </requiredTags>
+              <allowedTags>
+                <li>Jewelry</li>
+              </allowedTags>
+            </li>
+            <li>
+              <bodyPartGroupsMatchAny>
+                <li>Neck</li>
+              </bodyPartGroupsMatchAny>
+              <requiredTags>
+                <li>Jewelry</li>
+              </requiredTags>
+              <allowedTags>
+                <li>Jewelry</li>
+              </allowedTags>
+            </li>
+          </value>
+        </li>
+        <!-- More apparel money for royal -->
+        <li Class="PatchOperationReplace">
+          <success>Always</success>
+          <xpath>Defs/PawnKindDef[@Name="RoyalBase"]/apparelMoney</xpath>
+          <value>
+            <apparelMoney>2000~2500</apparelMoney>
+          </value>
+        </li>
+        <!-- Set favor value for all Gemstones -->
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Diamond" or defName="Ruby" or defName="Sapphire"]/statBases</xpath>
+          <value>
+            <RoyalFavorValue>0.035</RoyalFavorValue>
+          </value>
+        </li>
+        <!-- Update trader to accept Gemstones trade tag -->
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/TraderKindDef[defName="Empire_Caravan_TributeCollector"]/stockGenerators</xpath>
+          <value>
+            <li Class="StockGenerator_BuyTradeTag">
+              <tag>Gemstones</tag>
+            </li>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThoughtDef>
+    <defName>WearingJewelry</defName>
+    <workerClass>Jewelry.JThoughtWorker</workerClass>
+    <stages>
+      <li>
+        <label>Wearing jewelry</label>
+        <description>I'm wearing valuable jewelry.</description>
+        <baseMoodEffect>+1</baseMoodEffect>
+      </li>
+      <li>
+        <label>Wearing jewelry</label>
+        <description>I'm wearing valuable jewelry.</description>
+        <baseMoodEffect>+2</baseMoodEffect>
+      </li>
+      <li>
+        <label>Wearing jewelry</label>
+        <description>I'm wearing valuable jewelry.</description>
+        <baseMoodEffect>+3</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>WearingHQJewelry</defName>
+    <workerClass>Jewelry.JHQThoughtWorker</workerClass>
+    <stages>
+      <li>
+        <label>Wearing jewelry</label>
+        <description>I'm wearing high quality valuable jewelry.</description>
+        <baseMoodEffect>+2</baseMoodEffect>
+      </li>
+      <li>
+        <label>Wearing jewelry</label>
+        <description>I'm wearing high quality valuable jewelry.</description>
+        <baseMoodEffect>+4</baseMoodEffect>
+      </li>
+      <li>
+        <label>Wearing jewelry</label>
+        <description>I'm wearing high quality valuable jewelry.</description>
+        <baseMoodEffect>+6</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+</Defs>
