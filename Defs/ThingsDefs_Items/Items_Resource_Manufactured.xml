@@ -39,7 +39,8 @@
       <commonality>0.02</commonality>
       <color>(78,177,190)</color>
       <constructEffect>ConstructMetal</constructEffect>
-      <soundImpactBullet>BulletImpact_Metal</soundImpactBullet>
+		<soundImpactStuff IgnoreIfNoMatchingField="True">BulletImpact_Metal</soundImpactStuff>
+		<soundImpactBullet IgnoreIfNoMatchingField="True">BulletImpact_Metal</soundImpactBullet>
       <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
       <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
       <statOffsets>
@@ -99,7 +100,8 @@
       <commonality>0.02</commonality>
       <color>(125,38,37)</color>
       <constructEffect>ConstructMetal</constructEffect>
-      <soundImpactBullet>BulletImpact_Metal</soundImpactBullet>
+      <soundImpactStuff IgnoreIfNoMatchingField="True">BulletImpact_Metal</soundImpactStuff>
+      <soundImpactBullet IgnoreIfNoMatchingField="True">BulletImpact_Metal</soundImpactBullet>
       <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
       <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
       <statOffsets>
@@ -159,7 +161,8 @@
       <commonality>0.02</commonality>
       <color>(68,68,136)</color>
       <constructEffect>ConstructMetal</constructEffect>
-      <soundImpactBullet>BulletImpact_Metal</soundImpactBullet>
+      <soundImpactStuff IgnoreIfNoMatchingField="True">BulletImpact_Metal</soundImpactStuff>
+      <soundImpactBullet IgnoreIfNoMatchingField="True">BulletImpact_Metal</soundImpactBullet>
       <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
       <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
       <statOffsets>
