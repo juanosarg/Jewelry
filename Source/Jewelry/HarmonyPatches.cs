@@ -1,19 +1,11 @@
 ﻿using HarmonyLib;
 using RimWorld;
+using System.Collections.Generic;
+using System.Linq;
 using Verse;
 
 namespace Jewelry
 {
-    [StaticConstructorOnStartup]
-    public static class HarmonyInit
-    {
-        static HarmonyInit()
-        {
-            Harmony harmonyInstance = new Harmony("Kikohi.Jewelry");
-            harmonyInstance.PatchAll();
-        }
-    }
-
     [HarmonyPatch(typeof(ApparelUtility), "CanWearTogether")]
     public static class ApparelUtility_CanWearTogether_PostFix
     {
@@ -28,6 +20,34 @@ namespace Jewelry
                 __result = false;
             else if (A.defName.Contains("Jewelry_Ring") && B.defName.Contains("Jewelry_Ring"))
                 __result = false;
+        }
+    }
+
+    [HarmonyPatch(typeof(GenRecipe), nameof(GenRecipe.MakeRecipeProducts))]
+    public static class GenRecipe_MakeRecipeProducts
+    {
+        public static IEnumerable<Thing> Postfix(IEnumerable<Thing> __result, RecipeDef recipeDef, List<Thing> ingredients)
+        {
+            if (recipeDef.workerClass == typeof(RecipeWorker_Jewelry))
+            {
+                ThingDef gem = ingredients.First(x => x.def.IsStuff && x.def.stuffProps.categories.Contains(JewelryDefOf.Gemstones)).def;
+                ThingDef metal = ingredients.First(x => x.def.IsStuff && x.def.stuffProps.categories.Contains(StuffCategoryDefOf.Metallic)).def;
+                foreach (Thing ingredient in __result)
+                {
+                    if (ingredient is JewelryThing jewelry)
+                    {
+                        jewelry.gemstone = gem;
+                        //It sometimes chooses the gemstone for the stuff, so make sure it's the metal
+                        jewelry.SetStuffDirect(metal);
+                        yield return jewelry;
+                    }
+                }
+                yield break;
+            }
+            foreach (Thing thing in __result)
+            {
+                yield return thing;
+            }
         }
     }
 }
