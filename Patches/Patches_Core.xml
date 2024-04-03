@@ -8,21 +8,7 @@
   </Operation>
 
   <Operation Class="PatchOperationAdd">
-    <xpath>Defs/ThingDef[defName="SculptureSmall"]/stuffCategories</xpath>
-    <value>
-      <li>Gemstones</li>
-    </value>
-  </Operation>
-
-  <Operation Class="PatchOperationAdd">
-    <xpath>Defs/ThingDef[defName="SculptureLarge"]/stuffCategories</xpath>
-    <value>
-      <li>Gemstones</li>
-    </value>
-  </Operation>
-
-  <Operation Class="PatchOperationAdd">
-    <xpath>Defs/ThingDef[defName="SculptureGrand"]/stuffCategories</xpath>
+    <xpath>Defs/ThingDef[@ParentName="SculptureBase"]/stuffCategories</xpath>
     <value>
       <li>Gemstones</li>
     </value>
@@ -52,9 +38,17 @@
   </Operation>
 
   <Operation Class="PatchOperationAdd">
-    <xpath>Defs/BodyDef[defName="Human"]/corePart/parts/li[def="Neck"]/parts/li[def="Head"]/parts/li[def="Ear"]/groups</xpath>
+    <!--Removing the defName should let it get all races that use this basic structure-->
+    <xpath>Defs/BodyDef/corePart/parts/li[def="Neck"]/parts/li[def="Head"]/parts/li[def="Ear"]/groups</xpath>
     <value>
       <li>Ears</li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>//recipeUsers[li="TableSculpting"]</xpath>
+    <value>
+      <li>LaserTableSculpting</li>
     </value>
   </Operation>
 </Patch>
