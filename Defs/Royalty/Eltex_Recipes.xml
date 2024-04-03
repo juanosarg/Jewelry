@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RecipeDef ParentName="MakeJewelryBase" Name="MakeEltexJewelryBase" Abstract="True">
+		<ingredients>
+			<li MayRequire="VanillaExpanded.VPsycastsE">
+				<filter>
+					<thingDefs>
+						<li>VPE_Eltex</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Gemstones</li>
+			</categories>
+			<thingDefs>
+				<li MayRequire="VanillaExpanded.VPsycastsE">VPE_Eltex</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MakeEltexJewelryBase" MayRequire="VanillaExpanded.VPsycastsE">
+		<defName>Make_EltexBracelet</defName>
+		<label>make eltex bracelet</label>
+		<description>make a bracelet, but more descriptive</description>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Gemstones</li>
+					</categories>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<customSummary>metal</customSummary>
+					<stuffCategoriesToAllow>
+						<li>Metallic</li>
+					</stuffCategoriesToAllow>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<products>
+			<Jewelry_EltexBracelet>1</Jewelry_EltexBracelet>
+		</products>
+		<fixedIngredientFilter>
+			<allowAllWhoCanMake>
+				<li>Jewelry_EltexBracelet</li>
+			</allowAllWhoCanMake>
+
+		</fixedIngredientFilter>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MakeEltexJewelryBase" MayRequire="VanillaExpanded.VPsycastsE">
+		<defName>Make_PsychicNecklace</defName>
+		<label>make psychic necklace</label>
+		<skillRequirements>
+			<Crafting>9</Crafting>
+			<Artistic>5</Artistic>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Gemstones</li>
+					</categories>
+				</filter>
+				<count>15</count>
+			</li>
+			<li>
+				<filter>
+					<customSummary>metal</customSummary>
+					<stuffCategoriesToAllow>
+						<li>Metallic</li>
+					</stuffCategoriesToAllow>
+				</filter>
+				<count>3</count>
+			</li>
+		</ingredients>
+		<products>
+			<Jewelry_PsychicNecklace>1</Jewelry_PsychicNecklace>
+		</products>
+		<fixedIngredientFilter>
+			<allowAllWhoCanMake>
+				<li>Jewelry_PsychicNecklace</li>
+			</allowAllWhoCanMake>
+		</fixedIngredientFilter>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MakeEltexJewelryBase" MayRequire="VanillaExpanded.VPsycastsE">
+		<defName>Make_EltexRing</defName>
+		<label>make eltex ring</label>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Gemstones</li>
+					</categories>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<customSummary>metal</customSummary>
+					<stuffCategoriesToAllow>
+						<li>Metallic</li>
+					</stuffCategoriesToAllow>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<Jewelry_EltexRing>1</Jewelry_EltexRing>
+		</products>
+		<fixedIngredientFilter>
+			<allowAllWhoCanMake>
+				<li>Jewelry_EltexRing</li>
+			</allowAllWhoCanMake>
+		</fixedIngredientFilter>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MakeEltexJewelryBase" MayRequire="VanillaExpanded.VPsycastsE">
+		<defName>Make_EltexEarring</defName>
+		<label>make eltex earrings</label>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Gemstones</li>
+					</categories>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<customSummary>metal</customSummary>
+					<stuffCategoriesToAllow>
+						<li>Metallic</li>
+					</stuffCategoriesToAllow>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<Jewelry_EltexEarring>1</Jewelry_EltexEarring>
+		</products>
+		<fixedIngredientFilter>
+			<allowAllWhoCanMake>
+				<li>Jewelry_EltexEarring</li>
+			</allowAllWhoCanMake>
+		</fixedIngredientFilter>
+	</RecipeDef>
+</Defs>
