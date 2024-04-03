@@ -1,5 +1,9 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Defs>
+	<ResearchTabDef>
+		<defName>Jewelry</defName>
+		<label>Jewelry</label>
+	</ResearchTabDef>
 
 	<ResearchProjectDef>
 		<defName>LaserSculpting</defName>
@@ -25,5 +29,4 @@
 		<researchViewX>0</researchViewX>
 		<researchViewY>1</researchViewY>
 	</ResearchProjectDef>
-
 </Defs>
