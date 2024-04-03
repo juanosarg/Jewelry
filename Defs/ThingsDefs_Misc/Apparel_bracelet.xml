@@ -51,30 +51,6 @@
       <PawnBeauty>+1</PawnBeauty>
       <SocialImpact>0.05</SocialImpact>
     </equippedStatOffsets>
-    <!-- ===== Recipe ===== -->
-    <costStuffCount>10</costStuffCount>
-    <stuffCategories>
-      <li>Gemstones</li>
-    </stuffCategories>
-    <costList>
-      <Gold>2</Gold>
-    </costList>
-    <recipeMaker>
-      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-      <effectWorking>CutStone</effectWorking>
-      <soundWorking>Recipe_MakeStoneBlocks</soundWorking>
-      <recipeUsers>
-        <li>LaserTableSculpting</li>
-        <li>TableSculpting</li>
-      </recipeUsers>
-      <researchPrerequisite>Jewelry</researchPrerequisite>
-      <workSkill>Artistic</workSkill>
-      <skillRequirements>
-        <Crafting>5</Crafting>
-        <Artistic>5</Artistic>
-      </skillRequirements>
-      <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
-    </recipeMaker>
   </ThingDef>
 
   <ThingDef ParentName="K_Bracelet">
@@ -97,29 +73,5 @@
       <PawnBeauty>+1</PawnBeauty>
       <SocialImpact>0.05</SocialImpact>
     </equippedStatOffsets>
-    <!-- ===== Recipe ===== -->
-    <costStuffCount>10</costStuffCount>
-    <stuffCategories>
-      <li>Gemstones</li>
-    </stuffCategories>
-    <costList>
-      <Silver>2</Silver>
-    </costList>
-    <recipeMaker>
-      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-      <effectWorking>CutStone</effectWorking>
-      <soundWorking>Recipe_MakeStoneBlocks</soundWorking>
-      <recipeUsers>
-        <li>LaserTableSculpting</li>
-        <li>TableSculpting</li>
-      </recipeUsers>
-      <researchPrerequisite>Jewelry</researchPrerequisite>
-      <workSkill>Artistic</workSkill>
-      <skillRequirements>
-        <Crafting>5</Crafting>
-        <Artistic>5</Artistic>
-      </skillRequirements>
-      <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
-    </recipeMaker>
   </ThingDef>
 </Defs>
