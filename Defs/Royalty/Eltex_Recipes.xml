@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<RecipeDef ParentName="MakeJewelryBase" Name="MakeEltexJewelryBase" Abstract="True">
+	<RecipeDef ParentName="MakeJewelryBase" Name="MakeEltexJewelryBase" Abstract="True" MayRequire="VanillaExpanded.VPsycastsE">
 		<ingredients>
-			<li MayRequire="VanillaExpanded.VPsycastsE">
+			<li>
 				<filter>
 					<thingDefs>
-						<li>VPE_Eltex</li>
+						<li MayRequire="VanillaExpanded.VPsycastsE">VPE_Eltex</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -45,11 +45,11 @@
 			</li>
 		</ingredients>
 		<products>
-			<Jewelry_EltexBracelet>1</Jewelry_EltexBracelet>
+			<Jewelry_EltexBracelet MayRequire="Ludeon.RimWorld.Royalty">1</Jewelry_EltexBracelet>
 		</products>
 		<fixedIngredientFilter>
 			<allowAllWhoCanMake>
-				<li>Jewelry_EltexBracelet</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">Jewelry_EltexBracelet</li>
 			</allowAllWhoCanMake>
 
 		</fixedIngredientFilter>
@@ -82,11 +82,11 @@
 			</li>
 		</ingredients>
 		<products>
-			<Jewelry_PsychicNecklace>1</Jewelry_PsychicNecklace>
+			<Jewelry_PsychicNecklace MayRequire="Ludeon.RimWorld.Royalty">1</Jewelry_PsychicNecklace>
 		</products>
 		<fixedIngredientFilter>
 			<allowAllWhoCanMake>
-				<li>Jewelry_PsychicNecklace</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">Jewelry_PsychicNecklace</li>
 			</allowAllWhoCanMake>
 		</fixedIngredientFilter>
 	</RecipeDef>
@@ -114,11 +114,11 @@
 			</li>
 		</ingredients>
 		<products>
-			<Jewelry_EltexRing>1</Jewelry_EltexRing>
+			<Jewelry_EltexRing MayRequire="Ludeon.RimWorld.Royalty">1</Jewelry_EltexRing>
 		</products>
 		<fixedIngredientFilter>
 			<allowAllWhoCanMake>
-				<li>Jewelry_EltexRing</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">Jewelry_EltexRing</li>
 			</allowAllWhoCanMake>
 		</fixedIngredientFilter>
 	</RecipeDef>
@@ -146,11 +146,11 @@
 			</li>
 		</ingredients>
 		<products>
-			<Jewelry_EltexEarring>1</Jewelry_EltexEarring>
+			<Jewelry_EltexEarring MayRequire="Ludeon.RimWorld.Royalty">1</Jewelry_EltexEarring>
 		</products>
 		<fixedIngredientFilter>
 			<allowAllWhoCanMake>
-				<li>Jewelry_EltexEarring</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">Jewelry_EltexEarring</li>
 			</allowAllWhoCanMake>
 		</fixedIngredientFilter>
 	</RecipeDef>
