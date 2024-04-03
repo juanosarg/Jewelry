@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
   <ThingDef ParentName="BenchBase">
     <defName>LaserTableSculpting</defName>
     <label>laser sculpting table</label>
@@ -48,10 +47,10 @@
     </building>
     <comps>
       <li Class="CompProperties_Power">
-				<compClass>CompPowerTrader</compClass>
-				<basePowerConsumption>400</basePowerConsumption>
-			</li>
-			<li Class="CompProperties_Flickable" />
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>400</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable" />
       <li Class="CompProperties_AffectedByFacilities">
         <linkableFacilities>
           <li>ToolCabinet</li>
@@ -72,5 +71,4 @@
       <li>PlaceWorker_ShowFacilitiesConnections</li>
     </placeWorkers>
   </ThingDef>
-
 </Defs>

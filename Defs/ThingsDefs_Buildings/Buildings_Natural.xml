@@ -1,14 +1,27 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
-  <ThingDef ParentName="RockBase">
+	<ThingDef ParentName="RockBase" Name="MineableGemBase" Abstract="True">
+		<graphicData>
+			<texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<color>(107, 97, 97)</color>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>1500</MaxHitPoints>
+		</statBases>
+		<building>
+			<isResourceRock>true</isResourceRock>
+			<mineableYield>20</mineableYield>
+			<mineableScatterCommonality>0.08</mineableScatterCommonality>
+			<mineableScatterLumpSizeRange>2~6</mineableScatterLumpSizeRange>
+		</building>
+	</ThingDef>
+	
+  <ThingDef ParentName="MineableGemBase">
     <defName>MineableDiamond</defName>
     <label>diamond</label>
     <graphicData>
-      <texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <shaderType>CutoutComplex</shaderType>
-      <color>(107, 97, 97)</color>
       <colorTwo>(78,177,190)</colorTwo>
     </graphicData>
     <statBases>
@@ -16,57 +29,33 @@
     </statBases>
     <description>Rock containing bits of diamond.</description>
     <building>
-      <isResourceRock>true</isResourceRock>
       <mineableThing>Diamond</mineableThing>
-      <mineableYield>20</mineableYield>
       <mineableScatterCommonality>0.06</mineableScatterCommonality>
       <mineableScatterLumpSizeRange>2~5</mineableScatterLumpSizeRange>
     </building>
   </ThingDef>
 
-  <ThingDef ParentName="RockBase">
+  <ThingDef ParentName="MineableGemBase">
     <defName>MineableRuby</defName>
     <label>ruby</label>
     <graphicData>
-      <texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <shaderType>CutoutComplex</shaderType>
-      <color>(107, 97, 97)</color>
       <colorTwo>(125,38,37)</colorTwo>
     </graphicData>
-    <statBases>
-      <MaxHitPoints>1500</MaxHitPoints>
-    </statBases>
     <description>Rock containing bits of ruby.</description>
     <building>
-      <isResourceRock>true</isResourceRock>
       <mineableThing>Ruby</mineableThing>
-      <mineableYield>20</mineableYield>
-      <mineableScatterCommonality>0.08</mineableScatterCommonality>
-      <mineableScatterLumpSizeRange>2~6</mineableScatterLumpSizeRange>
     </building>
   </ThingDef>
 
-  <ThingDef ParentName="RockBase">
+  <ThingDef ParentName="MineableGemBase">
     <defName>MineableSapphire</defName>
     <label>sapphire</label>
     <graphicData>
-      <texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <shaderType>CutoutComplex</shaderType>
-      <color>(107, 97, 97)</color>
       <colorTwo>(68,68,136)</colorTwo>
     </graphicData>
-    <statBases>
-      <MaxHitPoints>1500</MaxHitPoints>
-    </statBases>
     <description>Rock containing bits of sapphire.</description>
     <building>
-      <isResourceRock>true</isResourceRock>
       <mineableThing>Sapphire</mineableThing>
-      <mineableYield>20</mineableYield>
-      <mineableScatterCommonality>0.08</mineableScatterCommonality>
-      <mineableScatterLumpSizeRange>2~6</mineableScatterLumpSizeRange>
     </building>
   </ThingDef>
 
