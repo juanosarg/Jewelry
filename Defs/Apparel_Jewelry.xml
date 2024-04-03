@@ -4,6 +4,8 @@
 		<thingCategories>
 			<li>K_Jewelry</li>
 		</thingCategories>
+		<thingClass>Jewelry.JewelryThing</thingClass>
+		<smeltable>true</smeltable>
 		<apparel>
 			<countsAsClothingForNudity>false</countsAsClothingForNudity>
 			<careIfWornByCorpse>false</careIfWornByCorpse>
@@ -15,6 +17,8 @@
 			<tags>
 				<li>Jewelry</li>
 			</tags>
+			<canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+			<canBeGeneratedToSatisfyToxicEnvironmentResistance>false</canBeGeneratedToSatisfyToxicEnvironmentResistance>
 		</apparel>
 		<tradeTags>
 			<li>ExoticMisc</li>
@@ -27,6 +31,15 @@
 		<stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
+		<defaultStuff>Gold</defaultStuff>
+		<!--Need to do this to get rid of the inherited CompColorable-->
+		<comps Inherit="False">
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Styleable"></li>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+		</comps>
 	</ThingDef>
 
 	<ThingDef ParentName="JewelryBase" Name="K_Bracelet">
