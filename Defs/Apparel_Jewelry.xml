@@ -47,7 +47,7 @@
 		<label>bracelet</label>
 		<description>A beautiful bracelet made from metal and a priceless gem. It improves the wearer's social skill and beauty.</description>
 		<graphicData>
-			<texPath>Jewelry/JewelleryBracelet</texPath>
+			<texPath>Jewelry/JewelryBracelet</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -77,7 +77,7 @@
 		<label>necklace</label>
 		<description>A beautiful necklace made from metal and a priceless gem. It improves the wearer's social skill, trade skill and beauty.</description>
 		<graphicData>
-			<texPath>Jewelry/JewelleryNecklace</texPath>
+			<texPath>Jewelry/JewelryNecklace</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -105,7 +105,7 @@
 		<label>ring</label>
 		<description>A beautiful ring made from metal and a priceless gem. It improves the wearer's social impact.</description>
 		<graphicData>
-			<texPath>Jewelry/JewelleryRing</texPath>
+			<texPath>Jewelry/JewelryRing</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -131,7 +131,7 @@
 		<label>earrings</label>
 		<description>A beautiful pair of earrings made from metal and a priceless gem. It improves the wearer's social skill, trade skill and beauty.</description>
 		<graphicData>
-			<texPath>Jewelry/JewelleryEarrings</texPath>
+			<texPath>Jewelry/JewelryEarrings</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
