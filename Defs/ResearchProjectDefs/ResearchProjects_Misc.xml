@@ -10,7 +10,7 @@
 		<prerequisites>
 			<li>Electricity</li>
 		</prerequisites>
-		<tab>Jewelery</tab>
+		<tab>Jewelry</tab>
 		<researchViewX>0</researchViewX>
 		<researchViewY>0</researchViewY>
 	</ResearchProjectDef>
@@ -21,7 +21,7 @@
 		<description>Learn how to make jewelry.</description>
 		<baseCost>600</baseCost>
 		<techLevel>Medieval</techLevel>
-		<tab>Jewelery</tab>
+		<tab>Jewelry</tab>
 		<researchViewX>0</researchViewX>
 		<researchViewY>1</researchViewY>
 	</ResearchProjectDef>
