@@ -9,7 +9,7 @@
     <soundInteract>ChunkRock_Drop</soundInteract>
     <soundDrop>ChunkRock_Drop</soundDrop>
     <thingCategories>
-      <li>ResourcesRaw</li>
+      <li>Gemstones</li>
     </thingCategories>
     <statBases>
       <MarketValue>6</MarketValue>

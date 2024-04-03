@@ -28,6 +28,15 @@
     </value>
   </Operation>
 
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Jade"]/thingCategories</xpath>
+    <value>
+      <thingCategories>
+        <li>Gemstones</li>
+      </thingCategories>
+    </value>
+  </Operation>
+
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/GenStepDef[defName="PreciousLump"]/genStep/mineables</xpath>
     <value>
