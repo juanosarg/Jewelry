@@ -6,27 +6,31 @@ using Verse;
 
 namespace Jewelry
 {
-    [HarmonyPatch(typeof(ApparelUtility), "CanWearTogether")]
+    [HarmonyPatch(typeof(ApparelUtility), nameof(ApparelUtility.CanWearTogether))]
     public static class ApparelUtility_CanWearTogether_PostFix
     {
         [HarmonyPostfix]
         public static void Postfix(ThingDef A, ThingDef B, ref bool __result)
         {
-            if (A.defName.Contains("Jewelry_Necklace") && B.defName.Contains("Jewelry_Necklace"))
+            if (__result && A.thingClass == typeof(JewelryThing) && B.thingClass == typeof(JewelryThing))
             {
-                __result = false;
-            }
-            else if (A.defName.Contains("Jewelry_Bracelet") && B.defName.Contains("Jewelry_Bracelet"))
-            {
-                __result = false;
-            }
-            else if (A.defName.Contains("Jewelry_Earring") && B.defName.Contains("Jewelry_Earring"))
-            {
-                __result = false;
-            }
-            else if (A.defName.Contains("Jewelry_Ring") && B.defName.Contains("Jewelry_Ring"))
-            {
-                __result = false;
+                //This will stop the psychic versions from being worn with the regular versions
+                if (A.defName.Contains("Necklace") && B.defName.Contains("Necklace"))
+                {
+                    __result = false;
+                }
+                else if (A.defName.Contains("Bracelet") && B.defName.Contains("Bracelet"))
+                {
+                    __result = false;
+                }
+                else if (A.defName.Contains("Earring") && B.defName.Contains("Earring"))
+                {
+                    __result = false;
+                }
+                else if (A.defName.Contains("Ring") && B.defName.Contains("Ring"))
+                {
+                    __result = false;
+                }
             }
         }
     }
