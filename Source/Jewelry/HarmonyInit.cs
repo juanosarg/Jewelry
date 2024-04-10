@@ -8,12 +8,12 @@ namespace Jewelry;
 [StaticConstructorOnStartup]
 public static class HarmonyInit
 {
-	static HarmonyInit()
-	{
-		Harmony val = new Harmony("Kikohi.Jewelry");
-		val.PatchAll();
+    static HarmonyInit()
+    {
+        Harmony harmony = new("Kikohi.Jewelry");
+        harmony.PatchAll();
         MakeRecipeList();
-	}
+    }
 
     private static void MakeRecipeList()
     {

@@ -28,22 +28,22 @@ namespace Jewelry
         public override void PostMake()
         {
             base.PostMake();
-            //This will pick a random gem on creation, but crafted items should have it overridden with the recipe postfix
+            //This will pick a random gem on creation. Crafted items should have it overridden with the recipe postfix, so this will only affect jewelry that's not crafted
             gemstone ??= JewelryUtility.GetRandomGemstone();
         }
 
         public override IEnumerable<Thing> SmeltProducts(float efficiency)
         {
-            if (!JewelryUtility.recipes.ContainsKey(this.def))
+            if (!JewelryUtility.recipes.ContainsKey(def))
             {
-                Log.Error($"Recipe not found for {this.def.defName}");
+                Log.Error($"Recipe not found for {def.defName}");
                 IEnumerable<Thing> list = base.SmeltProducts(efficiency);
                 foreach (Thing product in list)
                 {
                     yield return product;
                 }
             }
-            RecipeDef recipe = JewelryUtility.recipes[this.def];
+            RecipeDef recipe = JewelryUtility.recipes[def];
             int metalCost = recipe.ingredients.First(x => x.filter.AllowedThingDefs.Contains(Stuff)).CountRequiredOfFor(Stuff, recipe);
             int metalReturned = GenMath.RoundRandom(metalCost * 0.25f);
             if (metalReturned > 0)

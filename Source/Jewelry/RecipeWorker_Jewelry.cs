@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Verse;
+﻿using Verse;
 
 namespace Jewelry
 {
+    //This is just to have something easy to reference elsewhere
     public class RecipeWorker_Jewelry : RecipeWorker
     {
     }
