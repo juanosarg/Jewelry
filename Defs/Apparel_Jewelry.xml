@@ -5,6 +5,10 @@
 			<li>K_Jewelry</li>
 		</thingCategories>
 		<thingClass>Jewelry.JewelryThing</thingClass>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
 		<smeltable>true</smeltable>
 		<apparel>
 			<countsAsClothingForNudity>false</countsAsClothingForNudity>
@@ -27,7 +31,14 @@
 			<MaxHitPoints>150</MaxHitPoints>
 			<Flammability>0</Flammability>
 			<DeteriorationRate>0</DeteriorationRate>
+			<Mass>0.06</Mass>
+			<EquipDelay>0.2</EquipDelay>
+			<WorkToMake>4000</WorkToMake>
 		</statBases>
+		<equippedStatOffsets>
+			<PawnBeauty>+1</PawnBeauty>
+			<SocialImpact>0.05</SocialImpact>
+		</equippedStatOffsets>
 		<stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
@@ -48,20 +59,11 @@
 		<description>A beautiful bracelet made from metal and a priceless gem. It improves the wearer's social skill and beauty.</description>
 		<graphicData>
 			<texPath>Jewelry/JewelryBracelet</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<statBases>
-			<Mass>0.06</Mass>
-			<EquipDelay>0.2</EquipDelay>
 			<Beauty>15</Beauty>
 			<MarketValue>250</MarketValue>
-			<WorkToMake>4000</WorkToMake>
 		</statBases>
-		<equippedStatOffsets>
-			<PawnBeauty>+1</PawnBeauty>
-			<SocialImpact>0.05</SocialImpact>
-		</equippedStatOffsets>
 		<apparel>
 			<bodyPartGroups>
 				<li>LeftHand</li>
@@ -78,8 +80,6 @@
 		<description>A beautiful necklace made from metal and a priceless gem. It improves the wearer's social skill, trade skill and beauty.</description>
 		<graphicData>
 			<texPath>Jewelry/JewelryNecklace</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<apparel>
 			<bodyPartGroups>
@@ -91,11 +91,9 @@
 			<EquipDelay>0.3</EquipDelay>
 			<MarketValue>360</MarketValue>
 			<Beauty>10</Beauty>
-			<WorkToMake>4000</WorkToMake>
 		</statBases>
 		<equippedStatOffsets>
 			<TradePriceImprovement>0.05</TradePriceImprovement>
-			<PawnBeauty>+1</PawnBeauty>
 			<SocialImpact>0.1</SocialImpact>
 		</equippedStatOffsets>
 	</ThingDef>
@@ -106,8 +104,6 @@
 		<description>A beautiful ring made from metal and a priceless gem. It improves the wearer's social impact.</description>
 		<graphicData>
 			<texPath>Jewelry/JewelryRing</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<apparel>
 			<bodyPartGroups>
@@ -115,15 +111,10 @@
 			</bodyPartGroups>
 		</apparel>
 		<statBases>
-			<Mass>0.06</Mass>
-			<EquipDelay>0.2</EquipDelay>
 			<Beauty>15</Beauty>
 			<MarketValue>150</MarketValue>
 			<WorkToMake>2500</WorkToMake>
 		</statBases>
-		<equippedStatOffsets>
-			<SocialImpact>0.05</SocialImpact>
-		</equippedStatOffsets>
 	</ThingDef>
 
 	<ThingDef ParentName="JewelryBase" Name="K_Earrings">
@@ -132,8 +123,6 @@
 		<description>A beautiful pair of earrings made from metal and a priceless gem. It improves the wearer's social skill, trade skill and beauty.</description>
 		<graphicData>
 			<texPath>Jewelry/JewelryEarrings</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<apparel>
 			<bodyPartGroups>
@@ -141,16 +130,11 @@
 			</bodyPartGroups>
 		</apparel>
 		<statBases>
-			<Mass>0.06</Mass>
-			<EquipDelay>0.2</EquipDelay>
 			<Beauty>10</Beauty>
 			<MarketValue>160</MarketValue>
-			<WorkToMake>4000</WorkToMake>
 		</statBases>
 		<equippedStatOffsets>
 			<TradePriceImprovement>0.05</TradePriceImprovement>
-			<PawnBeauty>+1</PawnBeauty>
-			<SocialImpact>0.05</SocialImpact>
 		</equippedStatOffsets>
 	</ThingDef>
 </Defs>
