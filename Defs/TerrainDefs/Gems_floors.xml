@@ -30,7 +30,6 @@
   <TerrainDef ParentName="GemsMetalBase">
     <defName>RubyTile</defName>
     <label>ruby tile</label>
-    <renderPrecedence>242</renderPrecedence>
     <color>(0.49,0.15,0.14)</color>
     <costList>
       <Ruby>10</Ruby>
@@ -40,7 +39,6 @@
   <TerrainDef ParentName="GemsMetalBase">
     <defName>SapphireTile</defName>
     <label>sapphire tile</label>
-    <renderPrecedence>242</renderPrecedence>
     <color>(0.27,0.27,0.53)</color>
     <costList>
       <Sapphire>10</Sapphire>

@@ -15,13 +15,6 @@
   </Operation>
 
   <Operation Class="PatchOperationAdd">
-    <xpath>Defs/ThingDef[@Name="SculptureBase"]/recipeMaker/recipeUsers</xpath>
-    <value>
-      <li>LaserTableSculpting</li>
-    </value>
-  </Operation>
-
-  <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Jade"]/stuffProps/categories</xpath>
     <value>
       <li>Gemstones</li>

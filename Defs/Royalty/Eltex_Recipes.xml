@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<RecipeDef ParentName="MakeJewelryBase" Name="MakeEltexJewelryBase" Abstract="True" MayRequire="VanillaExpanded.VPsycastsE">
+	<RecipeDef ParentName="MakeJewelryBase" Name="MakeEltexJewelryBase" Abstract="True">
 		<ingredients>
 			<li>
 				<filter>
@@ -24,7 +24,6 @@
 	<RecipeDef ParentName="MakeEltexJewelryBase" MayRequire="VanillaExpanded.VPsycastsE">
 		<defName>Make_EltexBracelet</defName>
 		<label>make eltex bracelet</label>
-		<description>make a bracelet, but more descriptive</description>
 		<ingredients>
 			<li>
 				<filter>
@@ -51,7 +50,6 @@
 			<allowAllWhoCanMake>
 				<li MayRequire="Ludeon.RimWorld.Royalty">Jewelry_EltexBracelet</li>
 			</allowAllWhoCanMake>
-
 		</fixedIngredientFilter>
 	</RecipeDef>
 

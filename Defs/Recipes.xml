@@ -7,7 +7,6 @@
 		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
 		<recipeUsers>
 			<li>TableSculpting</li>
-			<li>LaserTableSculpting</li>
 		</recipeUsers>
 		<workSkill>Artistic</workSkill>
 		<researchPrerequisite>Jewelry</researchPrerequisite>
@@ -26,7 +25,6 @@
 	<RecipeDef ParentName="MakeJewelryBase">
 		<defName>Make_Bracelet</defName>
 		<label>make bracelet</label>
-		<description>make a bracelet, but more descriptive</description>
 		<ingredients>
 			<li>
 				<filter>

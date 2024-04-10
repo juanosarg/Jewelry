@@ -3,6 +3,7 @@
 	<ResearchTabDef>
 		<defName>Jewelry</defName>
 		<label>Jewelry</label>
+		<generalTitle>Jewelry</generalTitle>
 	</ResearchTabDef>
 
 	<ResearchProjectDef>
