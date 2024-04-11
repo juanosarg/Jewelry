@@ -14,6 +14,21 @@ namespace Jewelry
         {
             base.ExposeData();
             Scribe_Defs.Look(ref gemstone, "gemstone");
+            if (Scribe.mode == LoadSaveMode.LoadingVars)
+            {
+                if (gemstone == null)
+                {
+                    if (JewelryUtility.GemstoneList.Contains(Stuff))
+                    {
+                        gemstone = Stuff;
+                        SetStuffDirect(Rand.Value < 0.5f ? ThingDefOf.Gold : ThingDefOf.Silver);
+                    }
+                    else
+                    {
+                        gemstone = JewelryUtility.GetRandomGemstone();
+                    }
+                }
+            }
         }
 
         //I've set the stuff to be the metal, so color one will already be correct
