@@ -15,6 +15,9 @@
 			<categories>
 				<li>Gemstones</li>
 			</categories>
+			<disallowedThingDefs>
+				<li MayRequire="Ludeon.RimWorld.Anomaly">Bioferrite</li>
+			</disallowedThingDefs>
 		</fixedIngredientFilter>
 		<skillRequirements>
 			<Crafting>5</Crafting>
@@ -25,6 +28,7 @@
 	<RecipeDef ParentName="MakeJewelryBase">
 		<defName>Make_Bracelet</defName>
 		<label>make bracelet</label>
+		<jobString>Making bracelet.</jobString>
 		<ingredients>
 			<li>
 				<filter>
@@ -57,6 +61,7 @@
 	<RecipeDef ParentName="MakeJewelryBase">
 		<defName>Make_Necklace</defName>
 		<label>make necklace</label>
+		<jobString>Making necklace.</jobString>
 		<skillRequirements>
 			<Crafting>9</Crafting>
 			<Artistic>5</Artistic>
@@ -93,6 +98,7 @@
 	<RecipeDef ParentName="MakeJewelryBase">
 		<defName>Make_Ring</defName>
 		<label>make ring</label>
+		<jobString>Making ring.</jobString>
 		<ingredients>
 			<li>
 				<filter>
@@ -125,6 +131,7 @@
 	<RecipeDef ParentName="MakeJewelryBase">
 		<defName>Make_Earring</defName>
 		<label>make earrings</label>
+		<jobString>Making earrings.</jobString>
 		<ingredients>
 			<li>
 				<filter>
