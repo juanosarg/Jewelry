@@ -18,46 +18,45 @@
 			<veinMineable IgnoreIfNoMatchingField="True">true</veinMineable>
 		</building>
 	</ThingDef>
-	
-  <ThingDef ParentName="MineableGemBase">
-    <defName>MineableDiamond</defName>
-    <label>diamond</label>
-    <graphicData>
-      <colorTwo>(78,177,190)</colorTwo>
-    </graphicData>
-    <statBases>
-      <MaxHitPoints>1600</MaxHitPoints>
-    </statBases>
-    <description>Rock containing bits of diamond.</description>
-    <building>
-      <mineableThing>Diamond</mineableThing>
-      <mineableScatterCommonality>0.06</mineableScatterCommonality>
-      <mineableScatterLumpSizeRange>2~5</mineableScatterLumpSizeRange>
-    </building>
-  </ThingDef>
 
-  <ThingDef ParentName="MineableGemBase">
-    <defName>MineableRuby</defName>
-    <label>ruby</label>
-    <graphicData>
-      <colorTwo>(125,38,37)</colorTwo>
-    </graphicData>
-    <description>Rock containing bits of ruby.</description>
-    <building>
-      <mineableThing>Ruby</mineableThing>
-    </building>
-  </ThingDef>
+	<ThingDef ParentName="MineableGemBase">
+		<defName>MineableDiamond</defName>
+		<label>diamond</label>
+		<graphicData>
+			<colorTwo>(78,177,190)</colorTwo>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>1600</MaxHitPoints>
+		</statBases>
+		<description>Rock containing bits of diamond.</description>
+		<building>
+			<mineableThing>Diamond</mineableThing>
+			<mineableScatterCommonality>0.06</mineableScatterCommonality>
+			<mineableScatterLumpSizeRange>2~5</mineableScatterLumpSizeRange>
+		</building>
+	</ThingDef>
 
-  <ThingDef ParentName="MineableGemBase">
-    <defName>MineableSapphire</defName>
-    <label>sapphire</label>
-    <graphicData>
-      <colorTwo>(68,68,136)</colorTwo>
-    </graphicData>
-    <description>Rock containing bits of sapphire.</description>
-    <building>
-      <mineableThing>Sapphire</mineableThing>
-    </building>
-  </ThingDef>
+	<ThingDef ParentName="MineableGemBase">
+		<defName>MineableRuby</defName>
+		<label>ruby</label>
+		<graphicData>
+			<colorTwo>(125,38,37)</colorTwo>
+		</graphicData>
+		<description>Rock containing bits of ruby.</description>
+		<building>
+			<mineableThing>Ruby</mineableThing>
+		</building>
+	</ThingDef>
 
+	<ThingDef ParentName="MineableGemBase">
+		<defName>MineableSapphire</defName>
+		<label>sapphire</label>
+		<graphicData>
+			<colorTwo>(68,68,136)</colorTwo>
+		</graphicData>
+		<description>Rock containing bits of sapphire.</description>
+		<building>
+			<mineableThing>Sapphire</mineableThing>
+		</building>
+	</ThingDef>
 </Defs>

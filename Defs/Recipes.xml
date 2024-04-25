@@ -24,7 +24,7 @@
 			<Artistic>5</Artistic>
 		</skillRequirements>
 	</RecipeDef>
-	
+
 	<RecipeDef ParentName="MakeJewelryBase">
 		<defName>Make_Bracelet</defName>
 		<label>make bracelet</label>
