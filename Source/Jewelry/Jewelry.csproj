@@ -71,7 +71,7 @@
         </PackageReference>
       </ItemGroup>
       <ItemGroup>
-        <PackageReference Include="Krafs.Rimworld.Ref" Version="1.5.*-*">
+        <PackageReference Include="Krafs.Rimworld.Ref" Version="1.5.*">
           <ExcludeAssets>runtime</ExcludeAssets>
         </PackageReference>
       </ItemGroup>
