@@ -65,6 +65,7 @@ namespace Jewelry
         }
     }
 
+    //Convert old silver jewelry to the unified defName
     [HarmonyPatch(typeof(BackCompatibilityConverter_Universal), nameof(BackCompatibilityConverter_Universal.BackCompatibleDefName))]
     public static class BackCompatibilityConverter_Universal_BackCompatibleDefName
     {
@@ -99,6 +100,7 @@ namespace Jewelry
         }
     }
 
+    //Convert old jewelry with the Apparel thingClass to the new JewelryThing
     [HarmonyPatch(typeof(BackCompatibility), nameof(BackCompatibility.GetBackCompatibleType))]
     public static class BackCompatibility_GetBackCompatibleType
     {
