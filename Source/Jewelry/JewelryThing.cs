@@ -79,5 +79,16 @@ namespace Jewelry
         }
 
         public override string Label => base.Label.Replace(Stuff.LabelAsStuff, $"{Stuff.LabelAsStuff} {gemstone.label}");
+        public override IEnumerable<StatDrawEntry> SpecialDisplayStats()
+        {
+            foreach (var item in base.SpecialDisplayStats())
+            {
+                yield return item;
+            }
+            yield return new StatDrawEntry(StatCategoryDefOf.BasicsImportant, "StatGemstone_Name".Translate(), gemstone.ToString(), "StatGemstone_Desc".Translate(), 1099, hyperlinks:
+            [
+                new Dialog_InfoCard.Hyperlink(gemstone)
+            ]);
+        }
     }
 }
