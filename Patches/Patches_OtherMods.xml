@@ -1,120 +1,120 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 
-    <!-- Gemstones compatibility -->
-    <Operation Class="PatchOperationFindMod">
-        <mods>
-            <li>Gemstones</li>
-        </mods>
-        <match Class="PatchOperationSequence">
-            <operations>
-                <!--Prefer not to delete defs, people can use resource dictionary to choose the ones they want to keep-->
-                <!--<li Class="PatchOperationRemove">
+	<!-- Gemstones compatibility -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Gemstones</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<!--Prefer not to delete defs, people can use resource dictionary to choose the ones they want to keep-->
+				<!--<li Class="PatchOperationRemove">
                     <xpath>/Defs/ThingDef[defName="Z_Diamond" or defName="Z_Ruby" or defName="Z_Sapphire"]</xpath>
                 </li>-->
-                <!--Use their category, because they have a good icon-->
-                <li Class="PatchOperationReplace">
-                    <xpath>Defs/ThingDef/thingCategories/li[text()="Gemstones"]</xpath>
-                    <value>
-                        <li>Z_Gemstones</li>
-                    </value>
-                </li>
-                <li Class="PatchOperationReplace">
-                  <xpath>Defs/RecipeDef/fixedIngredientFilter/categories/li[text()="Gemstones"]</xpath>
-                  <value>
-                    <li>Z_Gemstones</li>
-                  </value>
-                </li>
-                <li Class="PatchOperationReplace">
-                  <xpath>Defs/RecipeDef/ingredients/li/filter/categories/li[text()="Gemstones"]</xpath>
-                  <value>
-                    <li>Z_Gemstones</li>
-                  </value>
-                </li>
-                <!--Add stuff category-->
-                <li Class="PatchOperationAdd">
-                    <xpath>Defs/ThingDef[@Name="Z_PreciousGemBase" or @Name="Z_GemBase"]/stuffProps/categories</xpath>
-                    <value>
-                        <li>Gemstones</li>
-                    </value>
-                </li>
-                <!--Do this over here so we can add the correct tag-->
-                <!-- Update trader to accept Gemstones trade tag -->
-                <li Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Royalty">
-                  <xpath>/Defs/TraderKindDef[defName="Empire_Caravan_TributeCollector"]/stockGenerators</xpath>
-                  <value>
-                    <li Class="StockGenerator_BuyTradeTag">
-                      <tag>Z_Gemstones</tag>
-                    </li>
-                  </value>
-                </li>
-              </operations>
-            </match>
-            <!--Add a thing category if needed-->
-            <nomatch Class="PatchOperationSequence">
-            <operations>
-              <li Class="PatchOperationAdd">
-                <xpath>Defs</xpath>
-                <value>
-                  <ThingCategoryDef>
-                    <defName>Gemstones</defName>
-                    <label>gemstones</label>
-                    <parent>ResourcesRaw</parent>
-                    <iconPath>Items/Resource/Diamond/Diamond_b</iconPath>
-                    <resourceReadoutRoot>true</resourceReadoutRoot>
-                  </ThingCategoryDef>
-                </value>
-              </li>
-              <!-- Update trader to accept Gemstones trade tag -->
-              <li Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Royalty">
-                <xpath>/Defs/TraderKindDef[defName="Empire_Caravan_TributeCollector"]/stockGenerators</xpath>
-                <value>
-                  <li Class="StockGenerator_BuyTradeTag">
-                    <tag>Gemstones</tag>
-                  </li>
-                </value>
-              </li>
-            </operations>
-        </nomatch>
-    </Operation>
+				<!--Use their category, because they have a good icon-->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef/thingCategories/li[text()="Gemstones"]</xpath>
+					<value>
+						<li>Z_Gemstones</li>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/RecipeDef/fixedIngredientFilter/categories/li[text()="Gemstones"]</xpath>
+					<value>
+						<li>Z_Gemstones</li>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/RecipeDef/ingredients/li/filter/categories/li[text()="Gemstones"]</xpath>
+					<value>
+						<li>Z_Gemstones</li>
+					</value>
+				</li>
+				<!--Add stuff category-->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[@Name="Z_PreciousGemBase" or @Name="Z_GemBase"]/stuffProps/categories</xpath>
+					<value>
+						<li>Gemstones</li>
+					</value>
+				</li>
+				<!--Do this over here so we can add the correct tag-->
+				<!-- Update trader to accept Gemstones trade tag -->
+				<li Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Royalty">
+					<xpath>/Defs/TraderKindDef[defName="Empire_Caravan_TributeCollector"]/stockGenerators</xpath>
+					<value>
+						<li Class="StockGenerator_BuyTradeTag">
+							<tag>Z_Gemstones</tag>
+						</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+		<!--Add a thing category if needed-->
+		<nomatch Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs</xpath>
+					<value>
+						<ThingCategoryDef>
+							<defName>Gemstones</defName>
+							<label>gemstones</label>
+							<parent>ResourcesRaw</parent>
+							<iconPath>Items/Resource/Diamond/Diamond_b</iconPath>
+							<resourceReadoutRoot>true</resourceReadoutRoot>
+						</ThingCategoryDef>
+					</value>
+				</li>
+				<!-- Update trader to accept Gemstones trade tag -->
+				<li Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Royalty">
+					<xpath>/Defs/TraderKindDef[defName="Empire_Caravan_TributeCollector"]/stockGenerators</xpath>
+					<value>
+						<li Class="StockGenerator_BuyTradeTag">
+							<tag>Gemstones</tag>
+						</li>
+					</value>
+				</li>
+			</operations>
+		</nomatch>
+	</Operation>
 
-    <!-- Glowstone compatibility -->
-    <Operation Class="PatchOperationFindMod">
-        <mods>
-            <li>Glowstone</li>
-        </mods>
-        <match Class="PatchOperationAdd">
-            <xpath>/Defs/ThingDef[defName="GLO_LargeGlowstone" or defName="GLO_SmallGlowstone"]</xpath>
-            <value>
-                <stuffProps>
-                    <stuffAdjective>glowstone</stuffAdjective>
-                    <categories>
-                        <li>Gemstones</li>
-                        <li>Stony</li>
-                    </categories>
-                    <thingCategories>
-                      <li>Gemstones</li>
-                    </thingCategories>
-                    <commonality>0.01</commonality>
-                    <color>(113,187,252)</color>
-                    <constructEffect>ConstructMetal</constructEffect>
-                    <soundImpactStuff IgnoreIfNoMatchingField="True">BulletImpact_Metal</soundImpactStuff>
-                    <soundImpactBullet IgnoreIfNoMatchingField="True">BulletImpact_Metal</soundImpactBullet>
-                    <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
-                    <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
-                    <statOffsets>
-                        <Beauty>10</Beauty>
-                    </statOffsets>
-                    <statFactors>
-                        <MaxHitPoints>0.5</MaxHitPoints>
-                        <WorkToMake>1.4</WorkToMake>
-                        <WorkToBuild>5.0</WorkToBuild>
-                        <Beauty>2.5</Beauty>
-                        <Flammability>0</Flammability>
-                        <MeleeWeapon_CooldownMultiplier>1.3</MeleeWeapon_CooldownMultiplier>
-                    </statFactors>
-                </stuffProps>
-            </value>
-        </match>
-    </Operation>
+	<!-- Glowstone compatibility -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Glowstone</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName="GLO_LargeGlowstone" or defName="GLO_SmallGlowstone"]</xpath>
+			<value>
+				<stuffProps>
+					<stuffAdjective>glowstone</stuffAdjective>
+					<categories>
+						<li>Gemstones</li>
+						<li>Stony</li>
+					</categories>
+					<thingCategories>
+						<li>Gemstones</li>
+					</thingCategories>
+					<commonality>0.01</commonality>
+					<color>(113,187,252)</color>
+					<constructEffect>ConstructMetal</constructEffect>
+					<soundImpactStuff IgnoreIfNoMatchingField="True">BulletImpact_Metal</soundImpactStuff>
+					<soundImpactBullet IgnoreIfNoMatchingField="True">BulletImpact_Metal</soundImpactBullet>
+					<soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+					<soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+					<statOffsets>
+						<Beauty>10</Beauty>
+					</statOffsets>
+					<statFactors>
+						<MaxHitPoints>0.5</MaxHitPoints>
+						<WorkToMake>1.4</WorkToMake>
+						<WorkToBuild>5.0</WorkToBuild>
+						<Beauty>2.5</Beauty>
+						<Flammability>0</Flammability>
+						<MeleeWeapon_CooldownMultiplier>1.3</MeleeWeapon_CooldownMultiplier>
+					</statFactors>
+				</stuffProps>
+			</value>
+		</match>
+	</Operation>
 </Patch>

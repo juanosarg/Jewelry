@@ -47,6 +47,7 @@ namespace Jewelry
             gemstone ??= JewelryUtility.GetRandomGemstone();
         }
 
+        //Can return both metal and gemstone when smelted
         public override IEnumerable<Thing> SmeltProducts(float efficiency)
         {
             if (!JewelryUtility.recipes.ContainsKey(def))
@@ -78,10 +79,13 @@ namespace Jewelry
             }
         }
 
+        //Add gemstone to the label
         public override string Label => base.Label.Replace(Stuff.LabelAsStuff, $"{Stuff.LabelAsStuff} {gemstone.label}");
+
+        //Add gemstone to the info card
         public override IEnumerable<StatDrawEntry> SpecialDisplayStats()
         {
-            foreach (var item in base.SpecialDisplayStats())
+            foreach (StatDrawEntry item in base.SpecialDisplayStats())
             {
                 yield return item;
             }
