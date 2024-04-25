@@ -3,7 +3,7 @@
 	<ResearchTabDef>
 		<defName>Jewelry</defName>
 		<label>Jewelry</label>
-		<generalTitle>Jewelry</generalTitle>
+		<generalTitle IgnoreIfNoMatchingField="True">Jewelry</generalTitle>
 	</ResearchTabDef>
 
 	<ResearchProjectDef>

@@ -15,6 +15,7 @@
 			<mineableYield>20</mineableYield>
 			<mineableScatterCommonality>0.08</mineableScatterCommonality>
 			<mineableScatterLumpSizeRange>2~6</mineableScatterLumpSizeRange>
+			<veinMineable IgnoreIfNoMatchingField="True">true</veinMineable>
 		</building>
 	</ThingDef>
 	

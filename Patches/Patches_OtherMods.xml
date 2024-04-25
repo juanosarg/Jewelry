@@ -38,20 +38,43 @@
                         <li>Gemstones</li>
                     </value>
                 </li>
-            </operations>
-        </match>
-        <!--Add a thing category if needed-->
-        <nomatch Class="PatchOperationAdd">
-            <xpath>Defs</xpath>
-            <value>
-                <ThingCategoryDef>
+                <!--Do this over here so we can add the correct tag-->
+                <!-- Update trader to accept Gemstones trade tag -->
+                <li Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Royalty">
+                  <xpath>/Defs/TraderKindDef[defName="Empire_Caravan_TributeCollector"]/stockGenerators</xpath>
+                  <value>
+                    <li Class="StockGenerator_BuyTradeTag">
+                      <tag>Z_Gemstones</tag>
+                    </li>
+                  </value>
+                </li>
+              </operations>
+            </match>
+            <!--Add a thing category if needed-->
+            <nomatch Class="PatchOperationSequence">
+            <operations>
+              <li Class="PatchOperationAdd">
+                <xpath>Defs</xpath>
+                <value>
+                  <ThingCategoryDef>
                     <defName>Gemstones</defName>
                     <label>gemstones</label>
                     <parent>ResourcesRaw</parent>
                     <iconPath>Items/Resource/Diamond/Diamond_b</iconPath>
                     <resourceReadoutRoot>true</resourceReadoutRoot>
-                </ThingCategoryDef>
-            </value>
+                  </ThingCategoryDef>
+                </value>
+              </li>
+              <!-- Update trader to accept Gemstones trade tag -->
+              <li Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Royalty">
+                <xpath>/Defs/TraderKindDef[defName="Empire_Caravan_TributeCollector"]/stockGenerators</xpath>
+                <value>
+                  <li Class="StockGenerator_BuyTradeTag">
+                    <tag>Gemstones</tag>
+                  </li>
+                </value>
+              </li>
+            </operations>
         </nomatch>
     </Operation>
 
