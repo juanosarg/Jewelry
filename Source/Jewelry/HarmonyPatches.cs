@@ -66,10 +66,10 @@ namespace Jewelry
     }
 
     //Convert old silver jewelry to the unified defName
-    [HarmonyPatch(typeof(BackCompatibilityConverter_Universal), nameof(BackCompatibilityConverter_Universal.BackCompatibleDefName))]
-    public static class BackCompatibilityConverter_Universal_BackCompatibleDefName
+    [HarmonyPatch(typeof(BackCompatibility), nameof(BackCompatibility.BackCompatibleDefName))]
+    public static class BackCompatibility_BackCompatibleDefName
     {
-        public static bool Prefix(Type defType, string defName, ref string __result, ref bool __state)
+        public static bool Prefix(Type defType, string defName, ref string __result)
         {
             if (defType == typeof(ThingDef) && defName.Contains("Jewelry_"))
             {
@@ -90,9 +90,8 @@ namespace Jewelry
                     default:
                         break;
                 }
-                if (__result != string.Empty)
+                if (!string.IsNullOrEmpty(__result))
                 {
-                    __state = true;
                     return false;
                 }
             }
