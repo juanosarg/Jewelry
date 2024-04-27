@@ -59,24 +59,30 @@ namespace Jewelry
                     yield return product;
                 }
             }
+
             RecipeDef recipe = JewelryUtility.recipes[def];
-            int metalCost = recipe.ingredients.First(x => x.filter.AllowedThingDefs.Contains(Stuff)).CountRequiredOfFor(Stuff, recipe);
-            int metalReturned = GenMath.RoundRandom(metalCost * 0.25f);
-            if (metalReturned > 0)
+            if (SmeltResult(recipe, Stuff, out Thing metal))
             {
-                Thing metal = ThingMaker.MakeThing(Stuff);
-                metal.stackCount = metalReturned;
                 yield return metal;
             }
-
-            int gemCost = recipe.ingredients.First(x => x.filter.AllowedThingDefs.Contains(gemstone)).CountRequiredOfFor(gemstone, recipe);
-            int gemReturned = GenMath.RoundRandom(gemCost * 0.25f);
-            if (gemReturned > 0)
+            if (SmeltResult(recipe, gemstone, out Thing gem))
             {
-                Thing gem = ThingMaker.MakeThing(gemstone);
-                gem.stackCount = gemReturned;
                 yield return gem;
             }
+        }
+
+        private bool SmeltResult(RecipeDef recipe, ThingDef ingredient, out Thing result)
+        {
+            int cost = recipe.ingredients.First(x => x.filter.AllowedThingDefs.Contains(ingredient)).CountRequiredOfFor(ingredient, recipe);
+            int returned = GenMath.RoundRandom(cost * 0.25f);
+            if (returned > 0)
+            {
+                result = ThingMaker.MakeThing(ingredient);
+                result.stackCount = returned;
+                return true;
+            }
+            result = null;
+            return false;
         }
 
         //Add gemstone to the label
