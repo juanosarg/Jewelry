@@ -19,7 +19,7 @@ namespace Jewelry
 
         public override void DoSettingsWindowContents(Rect inRect)
         {
-            Listing_Standard lst = new Listing_Standard();
+            Listing_Standard lst = new();
             lst.Begin(inRect);
             lst.Gap();
             lst.CheckboxLabeled("shouldJewelryBoostMood".Translate() + ": ", ref JewelrySettings.jewelryBoostMood, null);

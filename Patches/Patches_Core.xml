@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/WorkGiverDef[defName="DoBillsSculpt"]/fixedBillGiverDefs</xpath>
+		<value>
+			<li>LaserTableSculpting</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[@ParentName="SculptureBase"]/stuffCategories</xpath>
+		<value>
+			<li>Gemstones</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Jade"]/stuffProps/categories</xpath>
+		<value>
+			<li>Gemstones</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Jade"]/thingCategories</xpath>
+		<value>
+			<thingCategories>
+				<li>Gemstones</li>
+			</thingCategories>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/GenStepDef[defName="PreciousLump"]/genStep/mineables</xpath>
+		<value>
+			<li>MineableDiamond</li>
+			<li>MineableRuby</li>
+			<li>MineableSapphire</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<!--Removing the defName should let it get all races that use this basic structure-->
+		<xpath>Defs/BodyDef/corePart/parts/li[def="Neck"]/parts/li[def="Head"]/parts/li[def="Ear"]/groups</xpath>
+		<value>
+			<li>Ears</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>//recipeUsers[li="TableSculpting"]</xpath>
+		<value>
+			<li>LaserTableSculpting</li>
+		</value>
+	</Operation>
+</Patch>

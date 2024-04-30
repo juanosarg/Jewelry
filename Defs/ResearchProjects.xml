@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<ResearchTabDef>
+		<defName>Jewelry</defName>
+		<label>Jewelry</label>
+		<generalTitle IgnoreIfNoMatchingField="True">Jewelry</generalTitle>
+	</ResearchTabDef>
+
+	<ResearchProjectDef>
+		<defName>LaserSculpting</defName>
+		<label>Laser Sculpting Table</label>
+		<description>Electrically powered laser sculpting table to sculpt at 150% the speed of the regular table.</description>
+		<baseCost>800</baseCost>
+		<techLevel>Industrial</techLevel>
+		<prerequisites>
+			<li>Electricity</li>
+		</prerequisites>
+		<tab>Jewelry</tab>
+		<researchViewX>0</researchViewX>
+		<researchViewY>0</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>Jewelry</defName>
+		<label>Jewelry</label>
+		<description>Learn how to make jewelry.</description>
+		<baseCost>600</baseCost>
+		<techLevel>Medieval</techLevel>
+		<tab>Jewelry</tab>
+		<researchViewX>0</researchViewX>
+		<researchViewY>1</researchViewY>
+	</ResearchProjectDef>
+</Defs>

@@ -5,4 +5,7 @@
     <shouldJewelryBoostMood>Wearing jewelry give mood boost On/Off</shouldJewelryBoostMood>
     <explanationRToggle>Re-enabling jewelry requirement for royals requires a game restart.</explanationRToggle>
     <shouldJewelryNeed>Royal pawn need jewelry On/Off</shouldJewelryNeed>
+
+	<StatGemstone_Name>Gemstone</StatGemstone_Name>
+	<StatGemstone_Desc>The gemstone used to make this piece of jewelry.</StatGemstone_Desc>
 </LanguageData>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Achievements Expanded</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs</xpath>
+					<value>
+						<AchievementsExpanded.AchievementTabDef>
+							<defName>K_Jewelry</defName>
+							<label>Jewelry</label>
+						</AchievementsExpanded.AchievementTabDef>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs</xpath>
+					<value>
+						<AchievementsExpanded.AchievementDef>
+							<defName>K_JewelryDiamond</defName>
+							<label>Luxury peak</label>
+							<description>Have 200 diamonds</description>
+							<tab>K_Jewelry</tab>
+							<tracker Class="AchievementsExpanded.ItemTracker">
+								<def>Diamond</def>
+								<count>200</count>
+							</tracker>
+							<texPath>Items/Resource/Diamond/Diamond_c</texPath>
+							<points>25</points>
+						</AchievementsExpanded.AchievementDef>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs</xpath>
+					<value>
+						<AchievementsExpanded.AchievementDef>
+							<defName>K_JewelryRuby</defName>
+							<label>Beauty and wisdom</label>
+							<description>Have 200 rubies</description>
+							<tab>K_Jewelry</tab>
+							<tracker Class="AchievementsExpanded.ItemTracker">
+								<def>Ruby</def>
+								<count>200</count>
+							</tracker>
+							<texPath>Items/Resource/Ruby/Ruby_c</texPath>
+							<points>25</points>
+						</AchievementsExpanded.AchievementDef>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs</xpath>
+					<value>
+						<AchievementsExpanded.AchievementDef>
+							<defName>K_JewelrySapphire</defName>
+							<label>Royal decoration</label>
+							<description>Have 200 sapphires</description>
+							<tab>K_Jewelry</tab>
+							<tracker Class="AchievementsExpanded.ItemTracker">
+								<def>Sapphire</def>
+								<count>200</count>
+							</tracker>
+							<texPath>Items/Resource/Sapphire/Saphire_c</texPath>
+							<points>25</points>
+						</AchievementsExpanded.AchievementDef>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

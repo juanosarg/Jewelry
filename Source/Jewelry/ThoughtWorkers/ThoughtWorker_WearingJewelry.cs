@@ -11,16 +11,20 @@ namespace Jewelry
             if (JewelrySettings.jewelryBoostMood)
             {
                 int numberOfJewelry = -1;
-                var apparels = p.apparel.WornApparel;
 
-                for (int i = 0; i < apparels.Count; i++)
+                foreach (Apparel apparel in p.apparel.WornApparel)
                 {
-                    if (apparels[i].def.defName.Contains("Jewelry_"))
+                    //use if (apparels[i].def.thingClass == typeof(JewelryThing)) instead?
+                    if (apparel.def.defName.Contains("Jewelry_"))
+                    {
                         numberOfJewelry++;
+                    }
                 }
 
                 if (numberOfJewelry >= 0)
+                {
                     return ThoughtState.ActiveAtStage(Mathf.Min(numberOfJewelry, def.stages.Count));
+                }
             }
             return ThoughtState.Inactive;
         }

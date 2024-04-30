@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef ParentName="K_Bracelet" MayRequire="Ludeon.RimWorld.Royalty">
+		<defName>Jewelry_EltexBracelet</defName>
+		<label>eltex bracelet</label>
+		<description>A beautiful bracelet made from metal and a priceless gem. It improves the wearer's social skill and beauty. Its special materials enhance the wearer's psychic sensitivity and dissipate psychic entropy.</description>
+		<equippedStatOffsets>
+			<PsychicEntropyRecoveryRate>0.015</PsychicEntropyRecoveryRate>
+			<PsychicSensitivity>0.05</PsychicSensitivity>
+		</equippedStatOffsets>
+		<tradeTags Inherit="False">
+			<li>PsychicApparel</li>
+		</tradeTags>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+		<apparel>
+			<tags>
+				<li>Psychic</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+	<ThingDef ParentName="K_Necklace" MayRequire="Ludeon.RimWorld.Royalty">
+		<defName>Jewelry_PsychicNecklace</defName>
+		<label>eltex necklace</label>
+		<description>A beautiful necklace made from metal and a priceless gem. It improves the wearer's social skill and beauty. This particular necklace is for psychic focusing. While it provides little physical protection, its special materials enhance the wearer's psychic sensitivity and dissipate psychic entropy.</description>
+		<statBases>
+			<MarketValue>450</MarketValue>
+		</statBases>
+		<equippedStatOffsets>
+			<PsychicEntropyRecoveryRate>0.05</PsychicEntropyRecoveryRate>
+			<PsychicSensitivity>0.10</PsychicSensitivity>
+		</equippedStatOffsets>
+		<techLevel>Ultra</techLevel>
+		<tradeTags Inherit="False">
+			<li>PsychicApparel</li>
+		</tradeTags>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+		<apparel>
+			<tags>
+				<li>Psychic</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+	<ThingDef ParentName="K_Ring" MayRequire="Ludeon.RimWorld.Royalty">
+		<defName>Jewelry_EltexRing</defName>
+		<label>eltex ring</label>
+		<description>A beautiful ring made from metal and a priceless gem. It improves the wearer's social impact. This particular ring is for psychic focusing. Its special materials enhance the wearer's psychic sensitivity and dissipate psychic entropy.</description>
+		<equippedStatOffsets>
+			<PsychicEntropyRecoveryRate>0.015</PsychicEntropyRecoveryRate>
+			<PsychicSensitivity>0.05</PsychicSensitivity>
+		</equippedStatOffsets>
+		<techLevel>Ultra</techLevel>
+		<tradeTags Inherit="False">
+			<li>PsychicApparel</li>
+		</tradeTags>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+		<apparel>
+			<tags>
+				<li>Psychic</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+	<ThingDef ParentName="K_Earrings" MayRequire="Ludeon.RimWorld.Royalty">
+		<defName>Jewelry_EltexEarring</defName>
+		<label>eltex earring</label>
+		<description>A beautiful pair of earrings made from metal and a priceless gem. It improves the wearer's social skill, trade skill and beauty. Its special materials enhance the wearer's psychic sensitivity and dissipate psychic entropy.</description>
+		<equippedStatOffsets>
+			<PsychicEntropyRecoveryRate>0.015</PsychicEntropyRecoveryRate>
+			<PsychicSensitivity>0.05</PsychicSensitivity>
+		</equippedStatOffsets>
+		<tradeTags Inherit="False">
+			<li>PsychicApparel</li>
+		</tradeTags>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+		<apparel>
+			<tags>
+				<li>Psychic</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+</Defs>
