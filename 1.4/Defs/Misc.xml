@@ -14,7 +14,11 @@
 
 	<StuffCategoryDef>
 		<defName>Gemstones</defName>
-		<label>Gemstones</label>
+		<label>gemstone</label>
+		<noun>gemstone</noun>
+		<destroySoundSmall>BuildingDestroyed_Stone_Small</destroySoundSmall>
+		<destroySoundMedium>BuildingDestroyed_Stone_Medium</destroySoundMedium>
+		<destroySoundLarge>BuildingDestroyed_Stone_Big</destroySoundLarge>
 	</StuffCategoryDef>
 
 	<ThingCategoryDef>
