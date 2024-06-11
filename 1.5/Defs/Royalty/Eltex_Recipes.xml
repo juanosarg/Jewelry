@@ -18,6 +18,7 @@
 			<thingDefs>
 				<li MayRequire="VanillaExpanded.VPsycastsE">VPE_Eltex</li>
 			</thingDefs>
+			<disallowedThingDefs Inherit="False"/>
 		</fixedIngredientFilter>
 	</RecipeDef>
 
