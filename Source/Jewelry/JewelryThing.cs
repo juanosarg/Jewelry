@@ -95,7 +95,7 @@ namespace Jewelry
             {
                 yield return item;
             }
-            yield return new StatDrawEntry(StatCategoryDefOf.BasicsImportant, "StatGemstone_Name".Translate(), gemstone.ToString(), "StatGemstone_Desc".Translate(), 1099, hyperlinks:
+            yield return new StatDrawEntry(StatCategoryDefOf.BasicsImportant, "StatGemstone_Name".Translate(), gemstone.LabelCap, "StatGemstone_Desc".Translate(), 1099, hyperlinks:
             [
                 new Dialog_InfoCard.Hyperlink(gemstone)
             ]);
