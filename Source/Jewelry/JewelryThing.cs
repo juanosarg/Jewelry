@@ -52,12 +52,13 @@ namespace Jewelry
         {
             if (!JewelryUtility.recipes.ContainsKey(def))
             {
-                Log.Error($"Recipe not found for {def.defName}");
+                Log.WarningOnce($"Recipe not found for {def.defName}", def.shortHash);
                 IEnumerable<Thing> list = base.SmeltProducts(efficiency);
                 foreach (Thing product in list)
                 {
                     yield return product;
                 }
+                yield break;
             }
 
             RecipeDef recipe = JewelryUtility.recipes[def];
