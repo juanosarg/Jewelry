@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Xml;
+using UnityEngine;
 using Verse;
 
 namespace Jewelry
@@ -37,10 +38,15 @@ namespace Jewelry
         }
     }
 
-    [HarmonyPatch(typeof(GenRecipe), nameof(GenRecipe.MakeRecipeProducts))]
-    public static class GenRecipe_MakeRecipeProducts
+    [HarmonyPatch(typeof(GenRecipe))]
+    [HarmonyPatch("PostProcessProduct")]
+    public static class GenRecipe_PostProcessProduct
     {
-        public static IEnumerable<Thing> Postfix(IEnumerable<Thing> __result, RecipeDef recipeDef, List<Thing> ingredients)
+        //        public static IEnumerable<Thing> Postfix(IEnumerable<Thing> __result, RecipeDef recipeDef, List<Thing> ingredients)
+
+
+
+        static void Postfix(Thing product, RecipeDef recipeDef, Pawn worker)
         {
             if (recipeDef.workerClass == typeof(RecipeWorker_Jewelry))
             {
@@ -53,14 +59,10 @@ namespace Jewelry
                         jewelry.gemstone = gem;
                         //It sometimes chooses the gemstone for the stuff, so make sure it's the metal
                         jewelry.SetStuffDirect(metal);
+                        jewelry.HitPoints = Mathf.RoundToInt(jewelry.GetStatValue(StatDefOf.MaxHitPoints));
                         yield return jewelry;
                     }
                 }
-                yield break;
-            }
-            foreach (Thing thing in __result)
-            {
-                yield return thing;
             }
         }
     }

@@ -10,10 +10,15 @@ namespace Jewelry
     {
         public ThingDef gemstone;
 
+        private int hitPointsInt = -1;
+
+
+
         public override void ExposeData()
         {
             base.ExposeData();
             Scribe_Defs.Look(ref gemstone, "gemstone");
+            Scribe_Values.Look(ref hitPointsInt, "health", -1);
             if (Scribe.mode == LoadSaveMode.LoadingVars)
             {
                 if (gemstone == null)
@@ -46,6 +51,20 @@ namespace Jewelry
             //This will pick a random gem on creation. Crafted items should have it overridden with the recipe postfix, so this will only affect jewelry that's not crafted
             gemstone ??= JewelryUtility.GetRandomGemstone();
         }
+
+        public override int HitPoints {
+
+            get
+            {
+                return hitPointsInt;
+            }
+            set
+            {
+                hitPointsInt = value;
+            }
+
+        }
+
 
         //Can return both metal and gemstone when smelted
         public override IEnumerable<Thing> SmeltProducts(float efficiency)
