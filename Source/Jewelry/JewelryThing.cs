@@ -52,12 +52,13 @@ namespace Jewelry
         {
             if (!JewelryUtility.recipes.ContainsKey(def))
             {
-                Log.Error($"Recipe not found for {def.defName}");
+                Log.WarningOnce($"Recipe not found for {def.defName}", def.shortHash);
                 IEnumerable<Thing> list = base.SmeltProducts(efficiency);
                 foreach (Thing product in list)
                 {
                     yield return product;
                 }
+                yield break;
             }
 
             RecipeDef recipe = JewelryUtility.recipes[def];
@@ -95,8 +96,8 @@ namespace Jewelry
             {
                 yield return item;
             }
-            yield return new StatDrawEntry(StatCategoryDefOf.BasicsImportant, "StatGemstone_Name".Translate(), gemstone.ToString(), "StatGemstone_Desc".Translate(), 1099, hyperlinks:
-            [
+            yield return new StatDrawEntry(StatCategoryDefOf.BasicsImportant, "StatGemstone_Name".Translate(), gemstone.LabelCap, "StatGemstone_Desc".Translate(), 1099, hyperlinks:
+           [
                 new Dialog_InfoCard.Hyperlink(gemstone)
             ]);
         }
