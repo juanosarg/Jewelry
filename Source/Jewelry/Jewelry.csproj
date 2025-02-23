@@ -27,7 +27,7 @@
     <DebugType>portable</DebugType>
     <DebugSymbols>true</DebugSymbols>
     <Optimize>true</Optimize>
-    <OutputPath>..\..\1.4\Assemblies\</OutputPath>
+    <OutputPath>..\..\1.5\Assemblies\</OutputPath>
     <DefineConstants>TRACE;DEBUG;v1_4</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -53,13 +53,15 @@
     <When Condition="'$(Configuration)|$(Platform)' == '1.4|AnyCPU'">
       <ItemGroup>
         <PackageReference Include="Lib.Harmony">
-          <Version>2.2.2.0</Version>
+          <Version>2.3.3</Version>
           <ExcludeAssets>runtime</ExcludeAssets>
+          <IncludeAssets>compile; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
         </PackageReference>
       </ItemGroup>
       <ItemGroup>
-        <PackageReference Include="Krafs.Rimworld.Ref" Version="1.4.*">
+        <PackageReference Include="Krafs.Rimworld.Ref" Version="1.5.4297">
           <ExcludeAssets>runtime</ExcludeAssets>
+          <IncludeAssets>compile; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
         </PackageReference>
       </ItemGroup>
     </When>

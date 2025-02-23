@@ -4,7 +4,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Xml;
+using UnityEngine;
 using Verse;
+
 
 namespace Jewelry
 {
@@ -53,6 +55,8 @@ namespace Jewelry
                         jewelry.gemstone = gem;
                         //It sometimes chooses the gemstone for the stuff, so make sure it's the metal
                         jewelry.SetStuffDirect(metal);
+                        StatDefOf.MaxHitPoints.Worker.ClearCacheForThing(jewelry);
+                        jewelry.HitPoints = jewelry.MaxHitPoints;
                         yield return jewelry;
                     }
                 }
