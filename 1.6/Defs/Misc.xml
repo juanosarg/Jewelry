@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ApparelLayerDef>
+		<defName>Accessories</defName>
+		<label>accessories</label>
+		<drawOrder>350</drawOrder>
+	</ApparelLayerDef>
+
+	<BodyPartGroupDef>
+		<defName>Ears</defName>
+		<label>ears</label>
+		<listOrder>195</listOrder>
+	</BodyPartGroupDef>
+
+	<StuffCategoryDef>
+		<defName>Gemstones</defName>
+		<label>gemstone</label>
+		<noun>gemstone</noun>
+		<destroySoundSmall>BuildingDestroyed_Stone_Small</destroySoundSmall>
+		<destroySoundMedium>BuildingDestroyed_Stone_Medium</destroySoundMedium>
+		<destroySoundLarge>BuildingDestroyed_Stone_Big</destroySoundLarge>
+	</StuffCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>K_Jewelry</defName>
+		<label>jewelry</label>
+		<parent>Apparel</parent>
+	</ThingCategoryDef>
+
+	<DesignatorDropdownGroupDef>
+		<defName>Floor_Gems_Fine</defName>
+	</DesignatorDropdownGroupDef>
+</Defs>

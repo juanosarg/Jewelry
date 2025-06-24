@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Royalty</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<!-- Add Gemstone to authorized stuff for empire faction -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/FactionDef[defName="Empire"]/apparelStuffFilter/stuffCategoriesToAllow</xpath>
+					<value>
+						<li>Gemstones</li>
+					</value>
+				</li>
+				<!-- Add jewelry to required apparel -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/RoyalTitleDef[defName="Esquire" or defName="Knight"]/requiredApparel</xpath>
+					<value>
+						<li>
+							<bodyPartGroupsMatchAny>
+								<li>LeftHand</li>
+							</bodyPartGroupsMatchAny>
+							<requiredTags>
+								<li>Jewelry</li>
+							</requiredTags>
+							<allowedTags>
+								<li>Jewelry</li>
+							</allowedTags>
+						</li>
+						<li>
+							<bodyPartGroupsMatchAny>
+								<li>Ears</li>
+							</bodyPartGroupsMatchAny>
+							<requiredTags>
+								<li>Jewelry</li>
+							</requiredTags>
+							<allowedTags>
+								<li>Jewelry</li>
+							</allowedTags>
+						</li>
+					</value>
+				</li>
+				<!-- Add jewelry to pawnkind -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/PawnKindDef[defName="Empire_Royal_Esquire" or defName="Empire_Royal_Knight"]</xpath>
+					<value>
+						<apparelRequired>
+							<li>Jewelry_Bracelet</li>
+							<li>Jewelry_Earring</li>
+						</apparelRequired>
+					</value>
+				</li>
+				<!-- Add jewelry to required apparel -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/RoyalTitleDef[defName="Praetor" or defName="Baron"]/requiredApparel</xpath>
+					<value>
+						<li>
+							<bodyPartGroupsMatchAny>
+								<li>RightHand</li>
+							</bodyPartGroupsMatchAny>
+							<requiredTags>
+								<li>Jewelry</li>
+							</requiredTags>
+							<allowedTags>
+								<li>Jewelry</li>
+							</allowedTags>
+						</li>
+						<li>
+							<bodyPartGroupsMatchAny>
+								<li>LeftHand</li>
+							</bodyPartGroupsMatchAny>
+							<requiredTags>
+								<li>Jewelry</li>
+							</requiredTags>
+							<allowedTags>
+								<li>Jewelry</li>
+							</allowedTags>
+						</li>
+						<li>
+							<bodyPartGroupsMatchAny>
+								<li>Ears</li>
+							</bodyPartGroupsMatchAny>
+							<requiredTags>
+								<li>Jewelry</li>
+							</requiredTags>
+							<allowedTags>
+								<li>Jewelry</li>
+							</allowedTags>
+						</li>
+					</value>
+				</li>
+				<!-- Add jewelry to pawnkind -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/PawnKindDef[defName="Empire_Royal_Praetor" or defName="Empire_Royal_Baron"]</xpath>
+					<value>
+						<apparelRequired>
+							<li>Jewelry_Bracelet</li>
+							<li>Jewelry_Ring</li>
+							<li>Jewelry_Earring</li>
+						</apparelRequired>
+					</value>
+				</li>
+				<!-- Add jewelry to required apparel -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/RoyalTitleDef[defName="Count"]/requiredApparel</xpath>
+					<value>
+						<li>
+							<bodyPartGroupsMatchAny>
+								<li>RightHand</li>
+							</bodyPartGroupsMatchAny>
+							<requiredTags>
+								<li>Jewelry</li>
+							</requiredTags>
+							<allowedTags>
+								<li>Jewelry</li>
+							</allowedTags>
+						</li>
+						<li>
+							<bodyPartGroupsMatchAny>
+								<li>LeftHand</li>
+							</bodyPartGroupsMatchAny>
+							<requiredTags>
+								<li>Jewelry</li>
+							</requiredTags>
+							<allowedTags>
+								<li>Jewelry</li>
+							</allowedTags>
+						</li>
+						<li>
+							<bodyPartGroupsMatchAny>
+								<li>Ears</li>
+							</bodyPartGroupsMatchAny>
+							<requiredTags>
+								<li>Jewelry</li>
+							</requiredTags>
+							<allowedTags>
+								<li>Jewelry</li>
+							</allowedTags>
+						</li>
+						<li>
+							<bodyPartGroupsMatchAny>
+								<li>Neck</li>
+							</bodyPartGroupsMatchAny>
+							<requiredTags>
+								<li>Jewelry</li>
+							</requiredTags>
+							<allowedTags>
+								<li>Jewelry</li>
+							</allowedTags>
+						</li>
+					</value>
+				</li>
+				<!-- Add jewelry to pawnkind -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/PawnKindDef[defName="Empire_Royal_Count" or defName="Empire_Royal_Duke" or defName="Empire_Royal_Consul" or defName="Empire_Royal_Stellarch"]</xpath>
+					<value>
+						<apparelRequired>
+							<li>Jewelry_Bracelet</li>
+							<li>Jewelry_Ring</li>
+							<li>Jewelry_Earring</li>
+							<li>Jewelry_Necklace</li>
+						</apparelRequired>
+					</value>
+				</li>
+				<!-- Add jewelry to required apparel npc -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/RoyalTitleDef[@Name="BaseEmpireTitleNPC"]/requiredApparel</xpath>
+					<value>
+						<li>
+							<bodyPartGroupsMatchAny>
+								<li>RightHand</li>
+							</bodyPartGroupsMatchAny>
+							<requiredTags>
+								<li>Jewelry</li>
+							</requiredTags>
+							<allowedTags>
+								<li>Jewelry</li>
+							</allowedTags>
+						</li>
+						<li>
+							<bodyPartGroupsMatchAny>
+								<li>LeftHand</li>
+							</bodyPartGroupsMatchAny>
+							<requiredTags>
+								<li>Jewelry</li>
+							</requiredTags>
+							<allowedTags>
+								<li>Jewelry</li>
+							</allowedTags>
+						</li>
+						<li>
+							<bodyPartGroupsMatchAny>
+								<li>Ears</li>
+							</bodyPartGroupsMatchAny>
+							<requiredTags>
+								<li>Jewelry</li>
+							</requiredTags>
+							<allowedTags>
+								<li>Jewelry</li>
+							</allowedTags>
+						</li>
+						<li>
+							<bodyPartGroupsMatchAny>
+								<li>Neck</li>
+							</bodyPartGroupsMatchAny>
+							<requiredTags>
+								<li>Jewelry</li>
+							</requiredTags>
+							<allowedTags>
+								<li>Jewelry</li>
+							</allowedTags>
+						</li>
+					</value>
+				</li>
+				<!-- More apparel money for royal -->
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>Defs/PawnKindDef[@Name="RoyalBase"]/apparelMoney</xpath>
+					<value>
+						<apparelMoney>2000~2500</apparelMoney>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

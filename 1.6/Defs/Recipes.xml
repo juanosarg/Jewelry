@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RecipeDef Name="MakeJewelryBase" Abstract="True">
+		<workerClass>Jewelry.RecipeWorker_Jewelry</workerClass>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<effectWorking>CutStone</effectWorking>
+		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+		<recipeUsers>
+			<li>TableSculpting</li>
+		</recipeUsers>
+		<workSkill>Artistic</workSkill>
+		<researchPrerequisite>Jewelry</researchPrerequisite>
+		<unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Gemstones</li>
+			</categories>
+			<disallowedThingDefs>
+				<li MayRequire="Ludeon.RimWorld.Anomaly">Bioferrite</li>
+			</disallowedThingDefs>
+		</fixedIngredientFilter>
+		<skillRequirements>
+			<Crafting>5</Crafting>
+			<Artistic>5</Artistic>
+		</skillRequirements>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MakeJewelryBase">
+		<defName>Make_Bracelet</defName>
+		<label>make bracelet</label>
+		<jobString>Making bracelet.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Gemstones</li>
+					</categories>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<customSummary>metal</customSummary>
+					<stuffCategoriesToAllow>
+						<li>Metallic</li>
+					</stuffCategoriesToAllow>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<products>
+			<Jewelry_Bracelet>1</Jewelry_Bracelet>
+		</products>
+		<fixedIngredientFilter>
+			<allowAllWhoCanMake>
+				<li>Jewelry_Bracelet</li>
+			</allowAllWhoCanMake>
+		</fixedIngredientFilter>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MakeJewelryBase">
+		<defName>Make_Necklace</defName>
+		<label>make necklace</label>
+		<jobString>Making necklace.</jobString>
+		<skillRequirements>
+			<Crafting>9</Crafting>
+			<Artistic>5</Artistic>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Gemstones</li>
+					</categories>
+				</filter>
+				<count>15</count>
+			</li>
+			<li>
+				<filter>
+					<customSummary>metal</customSummary>
+					<stuffCategoriesToAllow>
+						<li>Metallic</li>
+					</stuffCategoriesToAllow>
+				</filter>
+				<count>3</count>
+			</li>
+		</ingredients>
+		<products>
+			<Jewelry_Necklace>1</Jewelry_Necklace>
+		</products>
+		<fixedIngredientFilter>
+			<allowAllWhoCanMake>
+				<li>Jewelry_Necklace</li>
+			</allowAllWhoCanMake>
+		</fixedIngredientFilter>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MakeJewelryBase">
+		<defName>Make_Ring</defName>
+		<label>make ring</label>
+		<jobString>Making ring.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Gemstones</li>
+					</categories>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<customSummary>metal</customSummary>
+					<stuffCategoriesToAllow>
+						<li>Metallic</li>
+					</stuffCategoriesToAllow>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<Jewelry_Ring>1</Jewelry_Ring>
+		</products>
+		<fixedIngredientFilter>
+			<allowAllWhoCanMake>
+				<li>Jewelry_Ring</li>
+			</allowAllWhoCanMake>
+		</fixedIngredientFilter>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MakeJewelryBase">
+		<defName>Make_Earring</defName>
+		<label>make earrings</label>
+		<jobString>Making earrings.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Gemstones</li>
+					</categories>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<customSummary>metal</customSummary>
+					<stuffCategoriesToAllow>
+						<li>Metallic</li>
+					</stuffCategoriesToAllow>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<Jewelry_Earring>1</Jewelry_Earring>
+		</products>
+		<fixedIngredientFilter>
+			<allowAllWhoCanMake>
+				<li>Jewelry_Earring</li>
+			</allowAllWhoCanMake>
+		</fixedIngredientFilter>
+	</RecipeDef>
+</Defs>

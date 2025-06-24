@@ -1,9 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<LanguageData>
-  <JewelrySettingsCategoryLabel>Jewelry</JewelrySettingsCategoryLabel>
-
-  <shouldJewelryBoostMood>장신구를 착용할시 무드 보너스 활성화</shouldJewelryBoostMood>
-  <explanationRToggle>작위 설정은 게임을 재시작해야 적용됩니다.</explanationRToggle>
-  <shouldJewelryNeed>작위를 가진 정착민이 장신구를 요구함</shouldJewelryNeed>
-
-</LanguageData>
