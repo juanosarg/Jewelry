@@ -12,9 +12,9 @@ namespace Jewelry
 
         public static bool removed = false;
 
-        public override void FinalizeInit()
+        public override void FinalizeInit(bool fromLoad)
         {
-            base.FinalizeInit();
+            base.FinalizeInit(fromLoad);
             UpdateRequirement();
         }
 
